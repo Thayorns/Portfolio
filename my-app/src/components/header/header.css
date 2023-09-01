@@ -1,11 +1,41 @@
 .header-section {
-    
-    height: 600px;
+    height: 100vh;
+    background: #2f3030;
+    color: white;
+    font-family: 'Clarendon Wide Regular';
 }
 .navbar{
     line-height: 60px;
-    background: #616564;
+    background: #2f3030;
     position: fixed;
     top: 0;
     width: 100%;
+}
+.navbar ol {
+    float: right;
+    margin-right: 50px;
+}
+:where(.css-dev-only-do-not-override-190m0jy).ant-breadcrumb .ant-breadcrumb-separator{
+    color: white;
+    font-size: 21px;
+}
+:where(.css-dev-only-do-not-override-190m0jy).ant-breadcrumb a {
+    height: 60px;
+    color: white;
+    font-size: 21px;
+}
+.about {
+    margin: 63px auto 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about h1{
+    font-size: 4rem;
+    margin-top: 100px;
+}
+p {
+    font-size: 31px;
+    font-style: italic;
 }

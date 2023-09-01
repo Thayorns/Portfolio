@@ -10,6 +10,7 @@ const Footer = () => {
             <div>
                 - Ant Design
                 - React-responsive
+                - Fortran Clarendon font
             </div>
         </section>
     )

@@ -5,24 +5,23 @@ import './header.css'
 const Header = () => {
     return (
         <section className='header-section'>
-            <nav>
-                <Breadcrumb className='navbar'
-                    tabIndex={0}
-                    items={[
-                    {
-                        title: 'About',
-                    },
-                    {
-                        title: 'Projects',
-                    },
-                    {
-                        title: 'Contacts',
-                    }
-                    ]}
-                />
-            </nav>
-            <div>
-                and here - header section
+            <Breadcrumb className='navbar'
+                tabIndex={0}
+                items={[
+                {
+                    title: <a href="about">About</a>,
+                },
+                {
+                    title: <a href="projects">Projects</a>,
+                },
+                {
+                    title: <a href="contacts">Contacts</a>,
+                }
+                ]}
+            />
+            <div className='about'>
+                <h1>Hey I'm Valentine</h1>
+                <p>a frontend developer</p>
             </div>
         </section>
     )
