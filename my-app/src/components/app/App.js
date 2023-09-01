@@ -1,15 +1,17 @@
 import Header from '../header/header'
-import Projects from '../projects/projects'
+import Content from '../content/content'
 import Footer from '../footer/footer'
-import './App.css';
+import { Layout } from 'antd'
+
+import './App.css'
 
 const App = () => {
   return (
-    <div className="App">
+    <Layout className='layout'>
       <Header/>
-      <Projects/>
+      <Content/>
       <Footer/>
-    </div>
+    </Layout>
   )
 }
 

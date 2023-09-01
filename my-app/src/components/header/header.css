@@ -1,0 +1,11 @@
+.header-section {
+    
+    height: 600px;
+}
+.navbar{
+    line-height: 60px;
+    background: #616564;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
