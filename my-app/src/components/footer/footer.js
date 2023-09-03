@@ -11,6 +11,7 @@ const Footer = () => {
                 - Ant Design
                 - React-responsive
                 - Fortran Clarendon font
+                - Color Picker
             </div>
         </section>
     )
