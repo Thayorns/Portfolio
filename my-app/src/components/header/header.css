@@ -20,6 +20,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    border-bottom: #b8bdbd solid 1px;
 }
 .navbar ol {
     float: right;
@@ -56,7 +57,7 @@ p {
     margin-top: 15px;
     font-size: 31px;
     font-style: italic;
-    color: #abb2b2;
+    color: #b8bdbd;
     background: #2f3030;
     text-align: center;
 }
