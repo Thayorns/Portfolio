@@ -1,30 +1,37 @@
 .header-section {
     height: 100vh;
-    background: #2f3030;
+    background: black;
     color: white;
     font-family: 'Clarendon Wide Regular';
-
-    /* background-image: url(../../images/valentine-skywalker.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center; */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* NAVBAR */
 .navbar{
     line-height: 60px;
-    background: #2f3030;
+    background: black;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     border-bottom: #b8bdbd solid 1px;
+}
+.ant-avatar.ant-avatar-icon{
+    cursor: pointer;
+    margin: 2px 0 0 20px;
+    float: left;
 }
 .navbar ol {
     float: right;
     margin-right: 50px;
+}
+.ant-breadcrumb .ant-breadcrumb-link,
+.ant-breadcrumb .ant-breadcrumb-separator{
+    line-height: 60px;
+    margin: 0 12px;
 }
 .ant-breadcrumb .ant-breadcrumb-separator{
     color: white;
@@ -39,8 +46,10 @@
     background-color: #f5f7f7;
     color: black;
 }
+/* ---------------------- */
+
+/* ABOUT ME DIV */
 .about-me {
-    /* margin: 63px auto 0px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,16 +57,15 @@
 }
 .about-me h1{
     font-size: 4rem;
-    margin-bottom: 15px;
-    color: white;
-    background: #2f3030;
-    text-align: center;
+    margin-bottom: 15px;    
 }
 p {
     margin-top: 15px;
     font-size: 31px;
     font-style: italic;
-    color: #b8bdbd;
-    background: #2f3030;
+}
+.about-me h1,p{
+    color: #ffffff;
     text-align: center;
 }
+/* ---------------------- */

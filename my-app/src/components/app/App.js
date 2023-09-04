@@ -1,18 +1,22 @@
 import Header from '../header/header'
 import Content from '../content/content'
 import Footer from '../footer/footer'
-import { Layout } from 'antd'
+import  { useState } from 'react'
 
-import './App.css'
+import './App.css';
 
 const App = () => {
+
+  const [menuActive, setMenuActive] = useState(false)
+
   return (
-    <Layout className='layout'>
-      <Header/>
+    <div className="App">
+      <Header menuActive={menuActive} setMenuActive={setMenuActive}/>
       <Content/>
       <Footer/>
-    </Layout>
+    </div>
   )
 }
 
 export default App
+ 
