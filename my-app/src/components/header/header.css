@@ -89,6 +89,9 @@ p {
     .anticon[tabindex]{
         visibility: visible;
     }
+    .ant-avatar.ant-avatar-icon{
+        margin: auto 10px;
+    }
 }
 @media screen and (min-width: 768px) {
     .navbar ol {
@@ -96,6 +99,9 @@ p {
     }
     .anticon[tabindex]{
         display: none;
+    }
+    .ant-avatar.ant-avatar-icon{
+        margin: 2px 0;
     }
 }
 /* ---------------------- */

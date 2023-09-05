@@ -4,3 +4,8 @@
   max-width: 1208px;
   width: 90%;
 }
+@media screen and (max-width: 375px){
+  .App, .navbar{
+    width: 100%;
+  }
+}

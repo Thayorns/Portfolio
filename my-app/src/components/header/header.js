@@ -1,11 +1,12 @@
-import { Breadcrumb, Avatar } from 'antd';
-import { MenuOutlined } from '@ant-design/icons'
+import { Breadcrumb, Avatar, Dropdown } from 'antd';
+import { MenuOutlined } from '@ant-design/icons';
 
 import './header.css'
 
 const Header = ({ menuActive,setMenuActive }) => {
     const avatar = <img src={require('../../images/avatar.jpg')} alt='avatar'/>
     
+
     return (
         <section className='header-section'>
             <nav className='navbar'>
@@ -14,16 +15,10 @@ const Header = ({ menuActive,setMenuActive }) => {
                 <MenuOutlined onClick={() => setMenuActive(!menuActive)}/>
                 
                 <Breadcrumb tabIndex={0}
-                    items={[
-                        {
-                            title: <a href="about">About</a>,
-                        },
-                        {
-                            title: <a href="projects">Projects</a>,
-                        },
-                        {
-                            title: <a href="contacts">Contacts</a>,
-                        }
+                    items = {[
+                        {title: <a href="about">About</a>},
+                        {title: <a href="projects">Projects</a>},
+                        {title: <a href="contacts">Contacts</a>}
                     ]}
                 />
             </nav>
