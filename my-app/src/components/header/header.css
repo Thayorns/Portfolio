@@ -11,22 +11,21 @@
 
 /* NAVBAR */
 .navbar{
+    width: 1208px;
+    max-width: 1208px;
     line-height: 60px;
     background: black;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
     border-bottom: #b8bdbd solid 1px;
 }
 .ant-avatar.ant-avatar-icon{
     cursor: pointer;
-    margin: 2px 0 0 20px;
+    margin: 2px 0;
     float: left;
 }
 .navbar ol {
     float: right;
-    margin-right: 50px;
 }
 .ant-breadcrumb .ant-breadcrumb-link,
 .ant-breadcrumb .ant-breadcrumb-separator{

@@ -1,5 +1,6 @@
-.layout {
+.App{
+  position: relative;
+  width: 1208px;
   margin: 0 auto;
-  width: 100vw;
-  background: #cec18a;
+  max-width: 1208px;
 }
