@@ -1,5 +1,5 @@
 import { Breadcrumb, Avatar } from 'antd';
-// import { MenuOutlined } from '@ant-design/icons'
+import { MenuOutlined } from '@ant-design/icons'
 
 import './header.css'
 
@@ -11,7 +11,7 @@ const Header = ({ menuActive,setMenuActive }) => {
             <nav className='navbar'>
                 <Avatar size={60} icon={avatar}/>
 
-                {/* <MenuOutlined onClick={() => setMenuActive(!menuActive)}/> */}
+                <MenuOutlined onClick={() => setMenuActive(!menuActive)}/>
                 
                 <Breadcrumb tabIndex={0}
                     items={[

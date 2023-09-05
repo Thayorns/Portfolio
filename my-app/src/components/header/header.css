@@ -68,3 +68,34 @@ p {
     text-align: center;
 }
 /* ---------------------- */
+
+/* MENU-BURGER */
+.anticon[tabindex]{
+    float: right;
+    margin: 14px 12px;
+}
+.anticon svg{
+    height: 30px;
+    width: 30px;
+}
+/* ---------------------- */
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 425px) {
+    .navbar ol {
+        display: none;
+    }
+    .anticon[tabindex]{
+        visibility: visible;
+    }
+}
+@media screen and (min-width: 768px) {
+    .navbar ol {
+        visibility: visible;
+    }
+    .anticon[tabindex]{
+        display: none;
+    }
+}
+/* ---------------------- */
