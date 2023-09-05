@@ -11,13 +11,13 @@
 
 /* NAVBAR */
 .navbar{
-    width: 1208px;
+    width: 90%;
     max-width: 1208px;
+    padding: 15px 0;
     line-height: 60px;
     background: black;
     position: fixed;
     top: 0;
-    border-bottom: #b8bdbd solid 1px;
 }
 .ant-avatar.ant-avatar-icon{
     cursor: pointer;
