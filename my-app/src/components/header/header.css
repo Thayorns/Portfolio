@@ -70,7 +70,7 @@ p {
 /* ---------------------- */
 
 /* MENU-BURGER */
-.anticon[tabindex]{
+.anticon {
     float: right;
     margin: 14px 12px;
 }
@@ -86,7 +86,7 @@ p {
     .navbar ol {
         display: none;
     }
-    .anticon[tabindex]{
+    .anticon {
         visibility: visible;
     }
     .ant-avatar.ant-avatar-icon{
@@ -97,7 +97,7 @@ p {
     .navbar ol {
         visibility: visible;
     }
-    .anticon[tabindex]{
+    .anticon {
         display: none;
     }
     .ant-avatar.ant-avatar-icon{
