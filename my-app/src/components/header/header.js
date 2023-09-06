@@ -1,6 +1,7 @@
 import { Breadcrumb, Avatar, Dropdown } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+// import  { useState } from 'react'
 
 import './header.css'
 
@@ -17,13 +18,14 @@ const Header = () => {
         {label: <AnchorLink href="#contacts">Contacts</AnchorLink>,key: '2',}
     ]
 
+
     return (
         <section className='header-section'>
             <nav className='navbar'>
                 <Avatar size={60} icon={avatar}/>
                 
-                <Dropdown menu={{ items }}>
-                    <MenuOutlined onClick={(e) => e.preventDefault()}/> 
+                <Dropdown menu={{ items }} trigger={['click']}>
+                    <MenuOutlined onClick={(e) => e.preventDefault()} /> 
                 </Dropdown>
                 
                 <Breadcrumb tabIndex={0} items = {breadcrumbLinks}/>
@@ -32,6 +34,9 @@ const Header = () => {
                 <h1>Hey I'm Valentine</h1>
                 <hr style={{borderColor: "#828585", width: '250px'}}></hr>
                 <p>a frontend developer</p>
+            </div>
+            <div>
+
             </div>
         </section>
     )
