@@ -12,9 +12,9 @@ const Header = ({ menuActive,setMenuActive }) => {
         {title: <AnchorLink href="#contacts">Contacts</AnchorLink>}
     ]
     const items = [
-        {label: <a href="about">About</a>, key: '0',},
-        {label: <a href="projects">Projects</a>, key: '1',},
-        {label: <a href="contacts">Contacts</a>,key: '2',}
+        {label: <AnchorLink href="#about">About</AnchorLink>, key: '0',},
+        {label: <AnchorLink href="#projects">Projects</AnchorLink>, key: '1',},
+        {label: <AnchorLink href="#contacts">Contacts</AnchorLink>,key: '2',}
     ]
 
     return (
