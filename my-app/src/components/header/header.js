@@ -10,18 +10,20 @@ const Header = ({ menuActive,setMenuActive }) => {
         {title: <a href="projects">Projects</a>},
         {title: <a href="contacts">Contacts</a>}
     ]
+    const items = [
+        {label: <a href="about">About</a>, key: '0',},
+        {label: <a href="projects">Projects</a>, key: '1',},
+        {label: <a href="contacts">Contacts</a>,key: '2',}
+    ]
 
     return (
         <section className='header-section'>
             <nav className='navbar'>
                 <Avatar size={60} icon={avatar}/>
                 
-                {/* <Dropdown menu={breadcrumbLinks} trigger={['click']}>
-                    
-                        <MenuOutlined onClick={(e) => e.preventDefault()}/>
-                </Dropdown> */}
-                
-                <MenuOutlined onClick={(e) => e.preventDefault()}/>
+                <Dropdown menu={{ items }}>
+                    <MenuOutlined onClick={(e) => e.preventDefault()}/> 
+                </Dropdown>
                 
                 <Breadcrumb tabIndex={0} items = {breadcrumbLinks}/>
             </nav>

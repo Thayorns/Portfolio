@@ -78,6 +78,18 @@ p {
     height: 30px;
     width: 30px;
 }
+.ant-dropdown .ant-dropdown-menu{
+    margin: 20px auto 0 20px;
+    background: rgb(0, 0, 0);
+    width: 300px;
+    border-bottom: 1px solid white;
+    border-radius: 0%;
+    border-color: #828585;
+}
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content >a{
+    color: white;
+    font-size: 19px;
+}
 /* ---------------------- */
 
 
@@ -92,6 +104,7 @@ p {
     .ant-avatar.ant-avatar-icon{
         margin: auto 10px;
     }
+    
 }
 @media screen and (min-width: 768px) {
     .navbar ol {
