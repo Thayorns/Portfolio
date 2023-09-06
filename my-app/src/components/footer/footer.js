@@ -3,7 +3,7 @@ import './footer.css'
 
 const Footer = () => {
     return (
-        <section className='footer-section'>
+        <section className='footer-section' id='contacts'>
             <div>
                 and here - footer section
             </div>
@@ -12,6 +12,8 @@ const Footer = () => {
                 - React-responsive
                 - Fortran Clarendon font
                 - Color Picker
+                - react-anchor-link-smooth-scroll
+
             </div>
         </section>
     )

@@ -3,7 +3,7 @@ import './content.css'
 const Content = () => {
     return (
         <section className='content-section'>
-            <div>
+            <div id='projects'>
                 and here - content section
             </div>
         </section>
