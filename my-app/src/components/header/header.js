@@ -36,9 +36,9 @@ const Header = () => {
                 <p>a frontend developer</p>
                 <span>and this is the case when<br/>'coding' === 'my passion' // true</span>
             </div>
-            <div>
-
-            </div>
+            <div className='hobbyes'>
+                By the way, i find myself in an active life position so these are my hobbies:
+             </div>
         </section>
     )
 }

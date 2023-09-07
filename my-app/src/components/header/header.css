@@ -2,7 +2,7 @@
     height: 3000px;
     background: black;
     color: white;
-    font-family: 'Clarendon Wide Regular';
+    font-family: Consolas, 'Courier New', monospace;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,12 +56,14 @@
     align-items: center;
 }
 .about-me h1{
-    font-size: 4rem;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 48px;
     margin-bottom: 15px;    
 }
-p {
-    margin: 15px 0 15px;
-    font-size: 31px;
+.about-me p {
+    padding: 0 30px;
+    font-size: 28px;
+    font-family: Consolas, 'Courier New', monospace;
     font-style: italic;
 }
 .about-me h1,p{
@@ -69,8 +71,9 @@ p {
     text-align: center;
 }
 .about-me span{
-    font-size: 20px;
-    margin: 15px 5px;
+    font-size: 22px;
+    margin: 55px 0 0 0;
+    padding: 0 30px;
     font-family: Consolas, 'Courier New', monospace;
     text-align: left;
 }
@@ -99,6 +102,14 @@ p {
 }
 /* ---------------------- */
 
+/* HOBBYES DIV */
+.hobbyes{
+    padding: 0 30px;
+    font-size: 24px;
+    text-align: left;
+}
+/* ---------------------- */
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 425px) {
@@ -111,7 +122,12 @@ p {
     .ant-avatar.ant-avatar-icon{
         margin: auto 10px;
     }
-    
+    /* .hobbyes{
+        text-align: left;
+    }
+    .about-me span{
+        text-align: left;
+    } */
 }
 @media screen and (min-width: 768px) {
     .navbar ol {

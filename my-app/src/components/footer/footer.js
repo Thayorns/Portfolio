@@ -10,10 +10,9 @@ const Footer = () => {
             <div>
                 - Ant Design
                 - React-responsive
-                - Fortran Clarendon font
                 - Color Picker
                 - react-anchor-link-smooth-scroll
-
+                - react-scroll-parallax
             </div>
         </section>
     )
