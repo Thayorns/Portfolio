@@ -60,13 +60,17 @@
     margin-bottom: 15px;    
 }
 p {
-    margin-top: 15px;
+    margin: 15px 0 15px;
     font-size: 31px;
     font-style: italic;
 }
 .about-me h1,p{
     color: #ffffff;
     text-align: center;
+}
+.about-me span{
+    font-size: 20px;
+    margin: 15px auto;
 }
 /* ---------------------- */
 
