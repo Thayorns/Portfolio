@@ -70,7 +70,9 @@ p {
 }
 .about-me span{
     font-size: 20px;
-    margin: 15px auto;
+    margin: 15px 5px;
+    font-family: Consolas, 'Courier New', monospace;
+    text-align: left;
 }
 /* ---------------------- */
 
