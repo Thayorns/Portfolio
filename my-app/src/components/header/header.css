@@ -2,11 +2,9 @@
     height: 3000px;
     background: black;
     color: white;
+}
+* {
     font-family: Consolas, 'Courier New', monospace;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 /* NAVBAR */
@@ -39,7 +37,7 @@
 .ant-breadcrumb a {
     height: 60px;
     color: white;
-    font-size: 21px;
+    font-size: 23px;
 }
 .ant-breadcrumb a:hover {
     background-color: #f5f7f7;
@@ -56,15 +54,12 @@
     align-items: center;
 }
 .about-me h1{
-    font-family: Consolas, 'Courier New', monospace;
     font-size: 48px;
     margin-bottom: 15px;    
 }
 .about-me p {
     padding: 0 30px;
     font-size: 28px;
-    font-family: Consolas, 'Courier New', monospace;
-    font-style: italic;
 }
 .about-me h1,p{
     color: #ffffff;
@@ -74,7 +69,6 @@
     font-size: 22px;
     margin: 55px 0 0 0;
     padding: 0 30px;
-    font-family: Consolas, 'Courier New', monospace;
     text-align: left;
 }
 /* ---------------------- */
@@ -122,12 +116,6 @@
     .ant-avatar.ant-avatar-icon{
         margin: auto 10px;
     }
-    /* .hobbyes{
-        text-align: left;
-    }
-    .about-me span{
-        text-align: left;
-    } */
 }
 @media screen and (min-width: 768px) {
     .navbar ol {

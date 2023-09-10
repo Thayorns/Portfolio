@@ -34,7 +34,7 @@ const Header = () => {
                 <h1>Hey! I'm Valentine</h1>
                 <hr style={{borderColor: "#828585", width: '250px'}}></hr>
                 <p>a frontend developer</p>
-                <span>and this is the case when<br/>'coding' === 'my passion' // true</span>
+                <span>and this is the case when 'coding' === 'my passion' // true</span>
             </div>
             <div className='hobbyes'>
                 By the way, i find myself in an active life position so these are my hobbies:
