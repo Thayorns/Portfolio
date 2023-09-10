@@ -1,11 +1,13 @@
 import { Breadcrumb, Avatar, Dropdown, Card } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { useInView } from 'react-intersection-observer'
 // import  { useState } from 'react'
 
 import './header.css'
 
 const Header = () => {
+    const { ref, inView, entry } = useInView({threshold: 1,})
     const { Meta } = Card;
     const avatar = <img src={require('../../images/avatar.jpg')} alt='avatar'/>
     const breadcrumbLinks = [
@@ -40,7 +42,7 @@ const Header = () => {
             <div className='hobbyes'>
                 By the way, i find myself in an active life position so these are my hobbies:
                 
-                <div className='hobbies-cards'>
+                <div className='hobbies-cards' ref={ref} inView={inView}>
                     <Card hoverable 
                         cover={
                             <img alt="my airsoft hobby" 
@@ -63,9 +65,7 @@ const Header = () => {
                     
                     <Card hoverable style={{width: '380px'}}
                         cover={
-                            <img alt="Planes" 
-                                src={require('../../images/planes.jpg')} 
-                            />
+                            <img alt="Planes" src={require('../../images/planes.jpg')}/>
                         }
                     >
                         <Meta title="planes" description="learning to fly" />

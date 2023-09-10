@@ -5,6 +5,7 @@
 }
 * {
     font-family: Consolas, 'Courier New', monospace;
+    color: white;
 }
 
 /* NAVBAR */
@@ -30,14 +31,13 @@
     line-height: 60px;
     margin: 0 12px;
 }
-.ant-breadcrumb .ant-breadcrumb-separator{
+.ant-breadcrumb .ant-breadcrumb-separator,.ant-breadcrumb a {
     color: white;
-    font-size: 21px;
+    font-size: 23px;
+    font-weight: 600;
 }
 .ant-breadcrumb a {
     height: 60px;
-    color: white;
-    font-size: 23px;
 }
 .ant-breadcrumb a:hover {
     background-color: #f5f7f7;
@@ -91,7 +91,7 @@
     border-color: #828585;
 }
 .ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content >a{
-    color: white;
+    font-weight: 600;
     font-size: 19px;
 }
 /* ---------------------- */
@@ -111,7 +111,7 @@
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .ant-card .ant-card-meta-detail >div:not(:last-child){
     font-size: 22px;
