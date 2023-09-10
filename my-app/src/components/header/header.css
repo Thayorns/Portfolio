@@ -1,5 +1,5 @@
 .header-section {
-    height: 3000px;
+    height: 6000px;
     background: black;
     color: white;
 }
@@ -98,9 +98,30 @@
 
 /* HOBBYES DIV */
 .hobbyes{
+    /* background-attachment: scroll !important;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d; */
     padding: 0 30px;
     font-size: 24px;
     text-align: left;
+    height: 800px;
+}
+.hobbies-cards {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ant-card .ant-card-meta-detail >div:not(:last-child){
+    font-size: 22px;
+}
+.ant-card .ant-card-meta-description{
+    font-size: 17px;
+    font-weight: 600;
+}
+.ant-card-hoverable {
+    width: 280px;
 }
 /* ---------------------- */
 

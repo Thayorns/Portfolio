@@ -1,4 +1,4 @@
-import { Breadcrumb, Avatar, Dropdown } from 'antd';
+import { Breadcrumb, Avatar, Dropdown, Card } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 // import  { useState } from 'react'
@@ -6,6 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import './header.css'
 
 const Header = () => {
+    const { Meta } = Card;
     const avatar = <img src={require('../../images/avatar.jpg')} alt='avatar'/>
     const breadcrumbLinks = [
         {title: <AnchorLink offset={() => 100} href="#about">About Me</AnchorLink>},
@@ -21,7 +22,7 @@ const Header = () => {
 
     return (
         <section className='header-section'>
-            <nav className='navbar'>
+            <nav className='navbar' style={{zIndex: 1}}>
                 <Avatar size={60} icon={avatar}/>
                 
                 <Dropdown menu={{ items }} trigger={['click']}>
@@ -38,6 +39,38 @@ const Header = () => {
             </div>
             <div className='hobbyes'>
                 By the way, i find myself in an active life position so these are my hobbies:
+                
+                <div className='hobbies-cards'>
+                    <Card hoverable 
+                        cover={
+                            <img alt="my airsoft hobby" 
+                                src={require('../../images/airsoft-hobby.jpg')} 
+                            />
+                        }
+                    >
+                        <Meta title="Airsoft" description="fun military simulator" />
+                    </Card>
+                    
+                    <Card hoverable style={{width: '380px'}}
+                        cover={
+                            <img alt="gaming with my friends" style={{}}
+                                src={require('../../images/gaming.jpg')} 
+                            />
+                        }
+                    >
+                        <Meta title="Gaming" description="especially with my friends" />
+                    </Card>
+                    
+                    <Card hoverable style={{width: '380px'}}
+                        cover={
+                            <img alt="Planes" 
+                                src={require('../../images/planes.jpg')} 
+                            />
+                        }
+                    >
+                        <Meta title="planes" description="learning to fly" />
+                    </Card>
+                </div>
              </div>
         </section>
     )
