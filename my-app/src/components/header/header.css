@@ -108,10 +108,15 @@
     height: 800px;
 }
 .hobbies-cards {
-    margin-top: 50px;
+    margin: 50px auto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+
+}
+.hobbies-cards >div{
+    display: flex;
 }
 .ant-card .ant-card-meta-detail >div:not(:last-child){
     font-size: 22px;
@@ -122,11 +127,23 @@
 }
 .ant-card-hoverable {
     width: 280px;
+    margin: 50px 20px;
 }
 /* ---------------------- */
 
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 320px) {
+    .ant-card-hoverable {
+        width: 220px;
+    }
+    .ant-card .ant-card-meta-detail >div:not(:last-child){
+        font-size: 18px;
+    }
+    .ant-card .ant-card-meta-description{
+        font-size: 14px;
+    }
+}
 @media screen and (max-width: 425px) {
     .navbar ol {
         display: none;
@@ -136,6 +153,9 @@
     }
     .ant-avatar.ant-avatar-icon{
         margin: auto 10px;
+    }
+    .hobbies-cards >div{
+        flex-direction: column;
     }
 }
 @media screen and (min-width: 768px) {
@@ -150,6 +170,23 @@
     }
     .ant-dropdown .ant-dropdown-menu{
         display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .ant-card-hoverable {
+        width: 380px;
+    }
+    .ant-card .ant-card-meta-detail >div:not(:last-child){
+        font-size: 25px;
+    }
+    .ant-card .ant-card-meta-description{
+        font-size: 21px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .hobbies-cards{
+        flex-direction: column;
+        align-items: center;
     }
 }
 /* ---------------------- */
