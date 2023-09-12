@@ -148,9 +148,9 @@
     .navbar ol {
         display: none;
     }
-    .anticon {
+    /* .anticon {
         visibility: visible;
-    }
+    } */
     .ant-avatar.ant-avatar-icon{
         margin: auto 10px;
     }
@@ -158,7 +158,15 @@
         flex-direction: column;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (425px < width < 704px) {
+    .navbar ol {
+        display: none;
+    }
+    .hobbies-cards >div{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 704px) {
     .navbar ol {
         visibility: visible;
     }
@@ -181,6 +189,10 @@
     }
     .ant-card .ant-card-meta-description{
         font-size: 21px;
+    }
+    .hobbies-cards{
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media screen and (min-width: 1440px) {
