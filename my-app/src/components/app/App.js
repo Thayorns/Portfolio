@@ -6,7 +6,7 @@ import Footer from '../footer/footer'
 import './App.css';
 
 const App = () => {
-
+  
 
   return (
     <div className="App">

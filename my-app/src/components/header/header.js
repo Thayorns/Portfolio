@@ -7,7 +7,8 @@ import { useInView } from 'react-intersection-observer'
 import './header.css'
 
 const Header = () => {
-    const { ref, inView, entry } = useInView({threshold: 0.85,})
+    
+    const { ref, inView} = useInView({threshold: 0.3})
     const { Meta } = Card;
     const avatar = <img src={require('../../images/avatar.jpg')} alt='avatar'/>
     
@@ -40,10 +41,10 @@ const Header = () => {
                 <p>a frontend developer</p>
                 <span>and this is the case when 'coding' === 'my passion' // true</span>
             </div>
-            <div className='hobbyes'>
-                By the way, i find myself in an active life position so these are my hobbies:
-                
-                <div className='hobbies-cards' ref={ref}>
+            
+            <div className='hobbyes' ref={ref}>
+                <h3>By the way, i find myself in an active life position so these are my hobbies:</h3>
+                <div className='hobbies-cards'>
                    {/* ------------------------------------------------------------------ */}
                     <div>
                         <Card hoverable 
@@ -57,7 +58,7 @@ const Header = () => {
                         </Card>
                         <Card hoverable 
                             cover={
-                                <img alt="my airsoft hobby" 
+                                <img alt="my airsoft hobby"
                                     src={require('../../images/dreamteam.jpg')} 
                                 />
                             }
@@ -107,7 +108,7 @@ const Header = () => {
                         </Card>
                     </div>
                 </div>
-             </div>
+            </div>
         </section>
     )
 }
