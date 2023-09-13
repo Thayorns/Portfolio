@@ -61,11 +61,17 @@
     padding: 0 30px;
     font-size: 28px;
 }
-.about-me h1,p{
+.about-me h1,p,strong{
     color: #ffffff;
     text-align: center;
 }
+strong{
+    color: rgb(195, 26, 26);
+    font-size: large;
+}
 .about-me span{
+    transform: translateY(100%);
+    Transition: all ease-in 0.7s;
     font-size: 22px;
     margin: 55px 0 0 0;
     padding: 0 30px;
@@ -121,17 +127,30 @@
     font-size: 17px;
     font-weight: 600;
 }
-.ant-card-hoverable {
-    transform: translateY(100%);
+/* SCROLL ANIMATION */
+.hobbyes h3,
+.ant-card-hoverable{
+    transform: translateY(35%);
+    transition:  1s;
     opacity: 0;
-    Transition: all ease-in 0.7s;
+}
+
+.ant-card-hoverable {
     width: 280px;
     margin: 50px 20px;
+}
+.hobbies-cards hr{
+    transform: translateY(50px);
+    transition:  1s;
+    opacity: 0;
+    border-color: #828585;
+    width: 250px;
 }
 .slide-in {
     transform: translateY(0) !important;
     opacity: 1 !important;
   }
+
 /* ---------------------- */
 
 

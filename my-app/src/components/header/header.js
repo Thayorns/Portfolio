@@ -1,40 +1,14 @@
 import { Breadcrumb, Avatar, Dropdown, Card } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { useState, useRef, useEffect } from "react";
-
-
+import { useInView  } from 'react-intersection-observer'
 
 import './header.css'
 
 const Header = () => {
-    const [isIntersecting, setIsIntersecting] = useState(false);
-    const ref = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-        ([entry]) => {
-            setIsIntersecting(entry.isIntersecting);
-        },
-        { rootMargin: "-150px" }
-        );
-        console.log(isIntersecting);
-        observer.observe(ref.current);
-
-        return () => observer.disconnect();
-    }, [isIntersecting]);
-
-    useEffect(() => {
-        if (isIntersecting) {
-        ref.current.querySelectorAll("div").forEach((el) => {
-            el.classList.add("slide-in");
-        });
-        } 
-    }, [isIntersecting]);
-
+  
     const { Meta } = Card;
     const avatar = <img src={require('../../images/avatar.jpg')} alt='avatar'/>
-    
     const breadcrumbLinks = [
         {title: <AnchorLink offset={() => 100} href="#about">About Me</AnchorLink>},
         {title: <AnchorLink offset={() => 100} href="#projects">Projects</AnchorLink>},
@@ -46,6 +20,16 @@ const Header = () => {
         {label: <AnchorLink href="#contacts">Contacts</AnchorLink>,key: '2',}
     ]
 
+    const { ref: h3TagRef, inView: h3TagInView} = useInView({threshold: 0.3, triggerOnce: true});
+    const { ref: airsoftFirstRef, inView: airsoftFirstInView} = useInView({threshold: 0.3, triggerOnce: true});
+    const { ref: airsoftSecondRef, inView: airsoftSecondInView} = useInView({threshold: 0.3, triggerOnce: true});
+    const { ref: gamingFirstRef, inView: gamingFirstInView} = useInView({threshold: 0.3, triggerOnce: true});
+    const { ref: gamingSecondRef, inView: gamingSecondInView} = useInView({threshold: 0.3, triggerOnce: true});
+    const { ref: planesFirstRef, inView: planesFirstInView} = useInView({threshold: 0.3, triggerOnce: true});
+    const { ref: planesSecondRef, inView: planesSecondInView} = useInView({threshold: 0.3, triggerOnce: true});
+
+    const { ref: hrTagFirstRef, inView: hrTagFirstInView} = useInView({threshold: 0.4, triggerOnce: true});
+    const { ref: hrTagSecondRef, inView: hrTagSecondInView} = useInView({threshold: 0.4, triggerOnce: true});
 
     return (
         <section className='header-section'>
@@ -59,18 +43,20 @@ const Header = () => {
                 <Breadcrumb tabIndex={0} items = {breadcrumbLinks}/>
             </nav>
             <div className='about-me' id='about'>
-                <h1>Hey! I'm Valentine</h1>
-                <hr style={{borderColor: "#828585", width: '250px'}}></hr>
-                <p>a frontend developer</p>
-                <span>and this is the case when 'coding' === 'my passion' // true</span>
+            <h1>Hey! I'm Valentine</h1>
+            <hr style={{borderColor: "#828585", width: '250px'}}></hr>
+            <p>a frontend developer</p>
+            <span>and this is the case when 'coding' === 'my passion' // true</span>
             </div>
-            
+
             <div className='hobbyes'>
-                <h3>By the way, i find myself in an active life position so these are my hobbies:</h3>
-                <div className='hobbies-cards' ref={ref}>
+                <h3 ref={h3TagRef} className={h3TagInView ? 'slide-in' : ''}>
+                    By the way, i find myself in an active life position so these are my hobbies:
+                </h3>
+                <div className='hobbies-cards'>
                    {/* ------------------------------------------------------------------ */}
-                    <div>
-                        <Card hoverable 
+                   <div>
+                        <Card ref={airsoftFirstRef} hoverable className={airsoftFirstInView ? 'ant-card-hoverable slide-in' : ''}
                             cover={
                                 <img alt="my airsoft hobby" 
                                     src={require('../../images/airsoft-hobby.jpg')} 
@@ -79,7 +65,7 @@ const Header = () => {
                         >
                             <Meta title="Airsoft" description="fun military simulator" />
                         </Card>
-                        <Card hoverable 
+                        <Card ref={airsoftSecondRef} hoverable className={airsoftSecondInView ? 'ant-card-hoverable slide-in' : ''}
                             cover={
                                 <img alt="my airsoft hobby"
                                     src={require('../../images/dreamteam.jpg')} 
@@ -89,10 +75,11 @@ const Header = () => {
                             <Meta title="Jakals & MSOT 4112" description="The most powerful thing in airsoft is to cooperate with others" />
                         </Card>
                     </div>
-                    <hr style={{borderColor: "#828585", width: '250px'}}></hr>  
+                        
+                    <span><hr ref={hrTagFirstRef} className={hrTagFirstInView ? 'slide-in' : ''}></hr></span>  
                     {/* ------------------------------------------------------------------ */}
                     <div>    
-                        <Card hoverable 
+                        <Card ref={gamingFirstRef} hoverable className={gamingFirstInView ? 'ant-card-hoverable slide-in' : ''}
                             cover={
                                 <img alt="gaming with my friends"
                                     src={require('../../images/gaming.jpg')} 
@@ -101,7 +88,7 @@ const Header = () => {
                         >
                             <Meta title="Gaming.." description="especially with my friends" />
                         </Card>
-                        <Card hoverable 
+                        <Card ref={gamingSecondRef} hoverable className={gamingSecondInView ? 'ant-card-hoverable slide-in' : ''}
                             cover={
                                 <img alt="gaming with my friends"
                                     src={require('../../images/team-screenshot.jpg')} 
@@ -112,9 +99,9 @@ const Header = () => {
                         </Card>
                     </div>
                     {/* ------------------------------------------------------------------ */}
-                    <hr style={{borderColor: "#828585", width: '250px'}}></hr>
+                    <hr ref={hrTagSecondRef} className={hrTagSecondInView ? 'slide-in' : ''}></hr>
                     <div>    
-                        <Card hoverable 
+                        <Card ref={planesFirstRef} hoverable className={planesFirstInView ? 'ant-card-hoverable slide-in' : ''}
                             cover={
                                 <img alt="Planes" src={require('../../images/planes.jpg')}/>
                             }
@@ -122,7 +109,7 @@ const Header = () => {
                             <Meta title="planes" description="learning to fly" />
                         </Card>
 
-                        <Card hoverable 
+                        <Card ref={planesSecondRef} hoverable className={planesSecondInView ? 'ant-card-hoverable slide-in' : ''}
                             cover={
                                 <img alt="Planes" src={require('../../images/plane.jpg')}/>
                             }
