@@ -98,10 +98,6 @@
 
 /* HOBBYES DIV */
 .hobbyes{
-    background-attachment: scroll !important;
-    /* opacity: 1; */
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
     padding: 0 30px;
     font-size: 24px;
     text-align: left;
@@ -126,9 +122,16 @@
     font-weight: 600;
 }
 .ant-card-hoverable {
+    transform: translateY(100%);
+    opacity: 0;
+    Transition: all ease-in 0.7s;
     width: 280px;
     margin: 50px 20px;
 }
+.slide-in {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
 /* ---------------------- */
 
 

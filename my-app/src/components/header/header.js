@@ -1,14 +1,37 @@
 import { Breadcrumb, Avatar, Dropdown, Card } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { useInView } from 'react-intersection-observer'
-// import  { useState } from 'react'
+import { useState, useRef, useEffect } from "react";
+
+
 
 import './header.css'
 
 const Header = () => {
-    
-    const { ref, inView} = useInView({threshold: 0.3})
+    const [isIntersecting, setIsIntersecting] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+        ([entry]) => {
+            setIsIntersecting(entry.isIntersecting);
+        },
+        { rootMargin: "-150px" }
+        );
+        console.log(isIntersecting);
+        observer.observe(ref.current);
+
+        return () => observer.disconnect();
+    }, [isIntersecting]);
+
+    useEffect(() => {
+        if (isIntersecting) {
+        ref.current.querySelectorAll("div").forEach((el) => {
+            el.classList.add("slide-in");
+        });
+        } 
+    }, [isIntersecting]);
+
     const { Meta } = Card;
     const avatar = <img src={require('../../images/avatar.jpg')} alt='avatar'/>
     
@@ -42,9 +65,9 @@ const Header = () => {
                 <span>and this is the case when 'coding' === 'my passion' // true</span>
             </div>
             
-            <div className='hobbyes' ref={ref}>
+            <div className='hobbyes'>
                 <h3>By the way, i find myself in an active life position so these are my hobbies:</h3>
-                <div className='hobbies-cards'>
+                <div className='hobbies-cards' ref={ref}>
                    {/* ------------------------------------------------------------------ */}
                     <div>
                         <Card hoverable 
