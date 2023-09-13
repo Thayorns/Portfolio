@@ -1,5 +1,5 @@
 .header-section {
-    height: 6000px;
+    height: 3000px;
     background: black;
     color: white;
 }
@@ -61,13 +61,9 @@
     padding: 0 30px;
     font-size: 28px;
 }
-.about-me h1,p,strong{
+.about-me h1,p{
     color: #ffffff;
     text-align: center;
-}
-strong{
-    color: rgb(195, 26, 26);
-    font-size: large;
 }
 .about-me span{
     transform: translateY(100%);
@@ -129,8 +125,9 @@ strong{
 }
 /* SCROLL ANIMATION */
 .hobbyes h3,
-.ant-card-hoverable{
-    transform: translateY(35%);
+.ant-card-hoverable,
+.hobbies-cards hr{
+    transform: translateY(60px);
     transition:  1s;
     opacity: 0;
 }
@@ -140,9 +137,6 @@ strong{
     margin: 50px 20px;
 }
 .hobbies-cards hr{
-    transform: translateY(50px);
-    transition:  1s;
-    opacity: 0;
     border-color: #828585;
     width: 250px;
 }
@@ -156,6 +150,9 @@ strong{
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 320px) {
+    .header-section {
+        height: 3500px;
+    }
     .ant-card-hoverable {
         width: 220px;
     }
@@ -167,20 +164,30 @@ strong{
     }
 }
 @media screen and (max-width: 425px) {
+    .header-section {
+        height: 4500px;
+    }
     .navbar ol {
         display: none;
     }
-    /* .anticon {
-        visibility: visible;
-    } */
     .ant-avatar.ant-avatar-icon{
         margin: auto 10px;
+    }
+    .about-me h1{
+        font-size: 42px;
+    }
+    .about-me p{
+        font-size: 22px;
+    }
+    .about-me span{
+        font-size: 18px;
     }
     .hobbies-cards >div{
         flex-direction: column;
     }
 }
 @media screen and (425px < width < 704px) {
+    
     .navbar ol {
         display: none;
     }
@@ -189,6 +196,9 @@ strong{
     }
 }
 @media screen and (min-width: 704px) {
+    .header-section {
+        height: 2700px;
+    }
     .navbar ol {
         visibility: visible;
     }
@@ -203,6 +213,9 @@ strong{
     }
 }
 @media screen and (min-width: 1024px) {
+    .header-section {
+        height: 3100px;
+    }
     .ant-card-hoverable {
         width: 380px;
     }
@@ -218,9 +231,17 @@ strong{
     }
 }
 @media screen and (min-width: 1440px) {
+    .header-section {
+        height: 3400px;
+    }
     .hobbies-cards{
         flex-direction: column;
         align-items: center;
+    }
+}
+@media screen and (min-width: 2560px) {
+    .header-section {
+        height: 4100px;
     }
 }
 /* ---------------------- */
