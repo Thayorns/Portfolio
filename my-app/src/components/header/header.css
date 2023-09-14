@@ -231,7 +231,7 @@
 }
 @media screen and (min-width: 1440px) {
     .header-section {
-        height: 3400px;
+        height: 3200px;
     }
     .hobbies-cards{
         flex-direction: column;
