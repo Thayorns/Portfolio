@@ -3,11 +3,6 @@
     background: black;
     color: white;
 }
-* {
-    font-family: Consolas, 'Courier New', monospace;
-    color: white;
-}
-
 /* NAVBAR */
 .navbar{
     width: 90%;
@@ -99,23 +94,25 @@
 /* ---------------------- */
 
 /* HOBBYES DIV */
-.hobbyes{
+.hobbyes-cards{
     padding: 0 30px;
     font-size: 24px;
     text-align: left;
     height: 800px;
 }
-.hobbies-cards {
-    margin: 50px auto;
+h3,.content-section h3{
+    font-size: 26px;
+    margin-top: 100px;
+    padding: 0 30px;
+}
+.hobbies-cards,
+.projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
 
-}
-.hobbies-cards >div{
-    display: flex;
-}
 .ant-card .ant-card-meta-detail >div:not(:last-child){
     font-size: 22px;
 }
@@ -124,9 +121,8 @@
     font-weight: 600;
 }
 /* SCROLL ANIMATION */
-.hobbyes h3,
-.ant-card-hoverable,
-.hobbies-cards hr{
+h3,
+.ant-card-hoverable{
     transform: translateY(60px);
     transition:  1s;
     opacity: 0;
@@ -151,7 +147,7 @@
 /* MEDIA QUERIES */
 @media screen and (max-width: 320px) {
     .header-section {
-        height: 4000px;
+        height: 3900px;
     }
     .ant-card-hoverable {
         width: 220px;
@@ -213,7 +209,7 @@
 }
 @media screen and (min-width: 1024px) {
     .header-section {
-        height: 3100px;
+        height: 3000px;
     }
     .ant-card-hoverable {
         width: 380px;
@@ -224,18 +220,10 @@
     .ant-card .ant-card-meta-description{
         font-size: 21px;
     }
-    .hobbies-cards{
-        flex-direction: column;
-        align-items: center;
-    }
 }
 @media screen and (min-width: 1440px) {
     .header-section {
-        height: 3200px;
-    }
-    .hobbies-cards{
-        flex-direction: column;
-        align-items: center;
+        height: 3100px;
     }
 }
 @media screen and (min-width: 2560px) {
