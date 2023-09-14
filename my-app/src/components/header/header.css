@@ -136,6 +136,10 @@
     width: 280px;
     margin: 50px 20px;
 }
+.ant-card .ant-card-cover img,
+.ant-card-hoverable{
+    border-radius: 3px;
+}
 .hobbies-cards hr{
     border-color: #828585;
     width: 250px;
