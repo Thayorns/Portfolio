@@ -1,5 +1,5 @@
 .header-section {
-    height: 3000px;
+    height: 4400px;
     background: black;
     color: white;
 }
@@ -136,10 +136,6 @@
     width: 280px;
     margin: 50px 20px;
 }
-.ant-card .ant-card-cover img,
-.ant-card-hoverable{
-    border-radius: 3px;
-}
 .hobbies-cards hr{
     border-color: #828585;
     width: 250px;
@@ -155,7 +151,7 @@
 /* MEDIA QUERIES */
 @media screen and (max-width: 320px) {
     .header-section {
-        height: 3500px;
+        height: 4000px;
     }
     .ant-card-hoverable {
         width: 220px;
@@ -167,10 +163,9 @@
         font-size: 14px;
     }
 }
+
 @media screen and (max-width: 425px) {
-    .header-section {
-        height: 4500px;
-    }
+    
     .navbar ol {
         display: none;
     }
@@ -201,7 +196,7 @@
 }
 @media screen and (min-width: 704px) {
     .header-section {
-        height: 2700px;
+        height: 2600px;
     }
     .navbar ol {
         visibility: visible;
