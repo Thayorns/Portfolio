@@ -8,7 +8,7 @@
     font-size: 20px;
     text-align: left;
 }
-.footer-section ul{
-    display: inline-block;
-    width: fit-content;
+.footer-section ul li {
+    word-wrap: break-word;
+    padding-right: 15px;
 }

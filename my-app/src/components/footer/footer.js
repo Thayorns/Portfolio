@@ -1,4 +1,6 @@
 import { useInView  } from 'react-intersection-observer'
+
+
 import './footer.css'
 
 const Footer = () => {
@@ -11,17 +13,17 @@ const Footer = () => {
         <section className='footer-section' id='contacts'>
             <p ref={footerParagrathTagRef} className={footerParagrathTagInView ? 'slide-in' : ''}>Usefull sources:</p>
             <ul ref={ulTagRef} className={ulTagInView ? 'slide-in' : ''} >
-               <li>Ant Design</li>
-               <li>Color Picker</li>
-               <li>react anchor link smooth scroll</li>
-               <li>react intersection observer</li>
+               <li><a href='a'>Ant Design</a></li>
+               <li><a href='a'>Color Picker</a></li>
+               <li><a href='a'>react anchor link smooth scroll</a></li>
+               <li><a href='a'>react intersection observer</a></li>
             </ul>
             <p ref={footerContactParagrathTagRef} className={footerContactParagrathTagInView ? 'slide-in' : ''}>Contacts information:</p>
             <ul ref={ulTagRef} className={ulTagInView ? 'slide-in' : ''} >
-               <li>https://github.com/Thayorns</li>
-               <li>+7 921 325-22-50</li>
-               <li>hh.ru link</li>
-               <li>https://career.habr.com/vacancies?type=suitable </li>
+               <li><a href='a'>https://github.com/Thayorns</a></li>
+               <li><a href='a'>+7 921 325-22-50</a></li>
+               <li><a href='a'>hh.ru link</a></li>
+               <li><a href='a'>https://career.habr.com/vacancies?type=suitable</a></li>
             </ul>
         </section>
     )
