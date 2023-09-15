@@ -20,7 +20,7 @@ const Header = () => {
         {label: <AnchorLink href="#contacts">Contacts</AnchorLink>,key: '2',}
     ]
 
-    const { ref: h3TagRef, inView: h3TagInView} = useInView({threshold: 0.3, triggerOnce: true});
+    const { ref: headerParagrathTagRef, inView: headerParagrathTagInView} = useInView({threshold: 0.3, triggerOnce: true});
     const { ref: airsoftFirstRef, inView: airsoftFirstInView} = useInView({threshold: 0.3, triggerOnce: true});
     const { ref: airsoftSecondRef, inView: airsoftSecondInView} = useInView({threshold: 0.3, triggerOnce: true});
     const { ref: gamingFirstRef, inView: gamingFirstInView} = useInView({threshold: 0.3, triggerOnce: true});
@@ -47,9 +47,9 @@ const Header = () => {
                 <span>and this is the case when 'coding' === 'my passion' // true</span>
             </div>
 
-            <h3 ref={h3TagRef} className={h3TagInView ? 'slide-in' : ''}>
+            <p ref={headerParagrathTagRef} className={headerParagrathTagInView ? 'slide-in' : ''}>
                 By the way, i find myself in an active life position so these are my hobbies below:
-            </h3>
+            </p>
                 
             <div className='hobbies-cards'>
                     <Card ref={airsoftFirstRef} hoverable className={airsoftFirstInView ? 'ant-card-hoverable slide-in' : ''}

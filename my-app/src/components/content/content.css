@@ -1,5 +1,5 @@
 .content-section {
-    height: 4400px;
+    height: 2700px;
     background: black;
     color: white;
 }
@@ -7,3 +7,21 @@
     margin-top: 0;
     /* text-align: center; */
 }
+
+/* MEDIA QUERIES */
+@media screen and (320px < width < 768px) {
+    .content-section {
+        height: 3100px;
+    }
+}
+@media screen and (704px < width < 1024px) {
+    .content-section {
+        height: 1800px; 
+    }
+}
+@media screen and (min-width: 1024px) {
+    .content-section {
+        height: 2100px; 
+    }
+}
+/* ---------------------- */
