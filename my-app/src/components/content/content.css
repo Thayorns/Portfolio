@@ -16,12 +16,12 @@
 }
 @media screen and (704px < width < 1024px) {
     .content-section {
-        height: 1800px; 
+        height: 1700px; 
     }
 }
 @media screen and (min-width: 1024px) {
     .content-section {
-        height: 2100px; 
+        height: 2000px; 
     }
 }
 /* ---------------------- */

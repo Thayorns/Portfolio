@@ -1,5 +1,5 @@
 .header-section {
-    height: 4400px;
+    height: 600px;
     background: black;
     color: white;
 }
@@ -43,6 +43,7 @@
 /* ABOUT ME DIV */
 .about-me {
     height: 600px;
+    max-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +55,8 @@
 }
 .about-me p,
 .footer-section p,
-.header-section p {
+.header-section p,
+.hobbies-section p {
     padding: 0 30px;
     font-size: 28px;
 }
@@ -63,8 +65,6 @@
     text-align: center;
 }
 .about-me span{
-    /* transform: translateY(100%);
-    Transition: all ease-in 0.7s; */
     font-size: 22px;
     margin: 30px 0 0 0;
     padding: 0 30px;
@@ -95,10 +95,8 @@
 }
 /* ---------------------- */
 
-/* HOBBYES DIV */
-.header-section >p {
-    margin-top: 80px;
-}
+/* HOBBYES SECTION */
+
 .hobbyes-cards{
     padding: 0 30px;
     font-size: 24px;
@@ -107,7 +105,6 @@
 }
 .content-section h3{
     font-size: 28px;
-    /* margin-top: 80px; */
     padding: 0 30px;
 }
 .hobbies-cards,
@@ -129,7 +126,7 @@
 h3,
 .ant-card-hoverable,
 .footer-section p,
-.header-section >p,
+.hobbies-section >p,
 .footer-section ul{
     transform: translateY(60px);
     transition:  1s;
@@ -152,7 +149,7 @@ h3,
 /* MEDIA QUERIES */
 @media screen and (max-width: 320px) {
     .header-section {
-        height: 3900px;
+        height: 700px;
     }
     .ant-card-hoverable {
         width: 220px;
@@ -177,7 +174,8 @@ h3,
         font-size: 42px;
     }
     .about-me p,
-    .header-section p{
+    .header-section p,
+    .hobbies-section p{
         font-size: 22px;
     }
     .about-me span{
@@ -198,7 +196,7 @@ h3,
 }
 @media screen and (min-width: 704px) {
     .header-section {
-        height: 2600px;
+        height: 600px;
     }
     .navbar ol {
         visibility: visible;
@@ -215,7 +213,7 @@ h3,
 }
 @media screen and (min-width: 1024px) {
     .header-section {
-        height: 3000px;
+        height: 650px;
     }
     .ant-card-hoverable {
         width: 380px;
@@ -229,12 +227,7 @@ h3,
 }
 @media screen and (min-width: 1440px) {
     .header-section {
-        height: 3100px;
-    }
-}
-@media screen and (min-width: 2560px) {
-    .header-section {
-        height: 4100px;
+        height: 700px;
     }
 }
 /* ---------------------- */
