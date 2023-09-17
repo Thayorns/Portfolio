@@ -95,33 +95,7 @@
 }
 /* ---------------------- */
 
-/* HOBBYES SECTION */
 
-.hobbyes-cards{
-    padding: 0 30px;
-    font-size: 24px;
-    text-align: left;
-    height: 800px;
-}
-.content-section h3{
-    font-size: 28px;
-    padding: 0 30px;
-}
-.hobbies-cards,
-.projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.ant-card .ant-card-meta-detail >div:not(:last-child){
-    font-size: 22px;
-}
-.ant-card .ant-card-meta-description{
-    font-size: 17px;
-    font-weight: 600;
-}
 /* SCROLL ANIMATION */
 h3,
 .ant-card-hoverable,
@@ -143,91 +117,4 @@ h3,
     opacity: 1 !important;
   }
 
-/* ---------------------- */
-
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 320px) {
-    .header-section {
-        height: 700px;
-    }
-    .ant-card-hoverable {
-        width: 220px;
-    }
-    .ant-card .ant-card-meta-detail >div:not(:last-child){
-        font-size: 18px;
-    }
-    .ant-card .ant-card-meta-description{
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    
-    .navbar ol {
-        display: none;
-    }
-    .ant-avatar.ant-avatar-icon{
-        margin: auto 10px;
-    }
-    .about-me h1{
-        font-size: 42px;
-    }
-    .about-me p,
-    .header-section p,
-    .hobbies-section p{
-        font-size: 22px;
-    }
-    .about-me span{
-        font-size: 18px;
-    }
-    .hobbies-cards >div{
-        flex-direction: column;
-    }
-}
-@media screen and (425px < width < 704px) {
-    
-    .navbar ol {
-        display: none;
-    }
-    .hobbies-cards >div{
-        flex-direction: column;
-    }
-}
-@media screen and (min-width: 704px) {
-    .header-section {
-        height: 600px;
-    }
-    .navbar ol {
-        visibility: visible;
-    }
-    .anticon {
-        display: none;
-    }
-    .ant-avatar.ant-avatar-icon{
-        margin: 2px 0;
-    }
-    .ant-dropdown .ant-dropdown-menu{
-        display: none;
-    }
-}
-@media screen and (min-width: 1024px) {
-    .header-section {
-        height: 650px;
-    }
-    .ant-card-hoverable {
-        width: 380px;
-    }
-    .ant-card .ant-card-meta-detail >div:not(:last-child){
-        font-size: 25px;
-    }
-    .ant-card .ant-card-meta-description{
-        font-size: 21px;
-    }
-}
-@media screen and (min-width: 1440px) {
-    .header-section {
-        height: 700px;
-    }
-}
 /* ---------------------- */

@@ -1,5 +1,5 @@
 .content-section {
-    height: 2700px;
+    height: 2600px;
     background: black;
     color: white;
 }
@@ -11,7 +11,7 @@
 /* MEDIA QUERIES */
 @media screen and (320px < width < 768px) {
     .content-section {
-        height: 3100px;
+        height: 3000px;
     }
 }
 @media screen and (704px < width < 1024px) {

@@ -1,0 +1,27 @@
+.hobbies-cards,
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* HOBBYES SECTION */
+.hobbyes-cards{
+    padding: 0 30px;
+    font-size: 24px;
+    text-align: left;
+    height: 800px;
+}
+.content-section h3{
+    font-size: 28px;
+    padding: 0 30px;
+}
+
+
+.ant-card .ant-card-meta-detail >div:not(:last-child){
+    font-size: 22px;
+}
+.ant-card .ant-card-meta-description{
+    font-size: 17px;
+    font-weight: 600;
+}
