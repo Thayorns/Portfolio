@@ -8,6 +8,30 @@
   font-family: Consolas, 'Courier New', monospace;
   color: white;
 }
+/* --------------------------------------*/
+
+/* .ant-float-btn-default{
+  
+}
+.anticon{
+  background-color: black;
+  
+}
+.ant-float-btn-default .ant-float-btn-body{
+  background-color: black;
+}
+.ant-float-btn-default .ant-float-btn-body .ant-float-btn-content .ant-float-btn-icon{
+  background-color: rgb(0, 0, 0);
+}
+.ant-float-btn .ant-float-btn-body .ant-float-btn-content{
+  overflow: visible;
+  background: black;
+  margin-left: 36px;
+}
+.anticon svg{
+  background-color: rgb(0, 0, 0);
+} */
+/* ------------------------------------- */
 /* MEDIA QUERIES */
 @media screen and (max-width: 375px){
   .App, .navbar{
@@ -71,7 +95,7 @@
   .navbar ol {
       visibility: visible;
   }
-  .anticon {
+  .header-section .anticon {
       display: none;
   }
   .ant-avatar.ant-avatar-icon{
@@ -96,6 +120,16 @@
   }
   .ant-card .ant-card-meta-description{
       font-size: 16px;
+  }
+}
+@media screen and (425px < width < 704px){
+  .content-section{
+    height: 2100px;
+  }
+}
+@media screen and (1066px < width < 1440px){
+  .content-section{
+    height: 800px;
   }
 }
 @media screen and (min-width: 1440px) {
