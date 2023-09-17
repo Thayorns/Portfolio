@@ -58,7 +58,7 @@
 .header-section p,
 .hobbies-section p {
     padding: 0 30px;
-    font-size: 28px;
+    font-size: 24px;
 }
 .about-me h1,
 .about-me p{
@@ -93,28 +93,4 @@
     font-weight: 600;
     font-size: 19px;
 }
-/* ---------------------- */
-
-
-/* SCROLL ANIMATION */
-h3,
-.ant-card-hoverable,
-.footer-section p,
-.hobbies-section >p,
-.footer-section ul{
-    transform: translateY(60px);
-    transition:  1s;
-    opacity: 0;
-}
-
-.ant-card-hoverable {
-    width: 280px;
-    margin: 50px 20px;
-}
-
-.slide-in {
-    transform: translateY(0) !important;
-    opacity: 1 !important;
-  }
-
 /* ---------------------- */

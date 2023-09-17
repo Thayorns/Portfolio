@@ -14,7 +14,7 @@ const Hobbies = () => {
     const { ref: planesSecondRef, inView: planesSecondInView} = useInView({threshold: 0.3, triggerOnce: true});
 
     return (
-        <section className='hobbies-section' >
+        <section className='hobbies-section'  id='about'>
             <p ref={headerParagrathTagRef} className={headerParagrathTagInView ? 'slide-in' : ''}>
                 By the way, i find myself in an active life position so these are my hobbies below:
             </p>
@@ -55,7 +55,7 @@ const Hobbies = () => {
                         />
                     }
                 >
-                    <Meta title="'Jakals of Azeroth'" description="By the way, my very 1st pet-project was dedicated to our game-community.The precious moments..." />
+                    <Meta title="'Jakals of Azeroth'" description="By the way, my very 1st pet-project was dedicated to our game-community" />
                 </Card>  
                 <Card ref={planesFirstRef} hoverable className={planesFirstInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={

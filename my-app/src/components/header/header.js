@@ -33,7 +33,7 @@ const Header = () => {
                 
                 <Breadcrumb tabIndex={0} items = {breadcrumbLinks}/>
             </nav>
-            <div className='about-me' id='about'>
+            <div className='about-me'>
                 <h1>Hey! I'm Valentine</h1>
                 <hr style={{borderColor: "#828585", width: '250px'}}></hr>
                 <p>a frontend developer</p>

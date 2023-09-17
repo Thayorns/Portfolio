@@ -33,7 +33,7 @@ const Content = () => {
                         />
                     }
                 >
-                    <Meta title="Primals" description="In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit" />
+                    <Meta title="Primals" description="In mathematics, the sieve of Eratosthenes is an ancient algorithm .." />
                 </Card>
                 <Card ref={calculatorAppRef} hoverable className={calculatorAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
@@ -51,7 +51,7 @@ const Content = () => {
                         />
                     }
                 >
-                    <Meta title="Least Common Multiples" description="the lowest common multiple of two integers 'a' and 'b', is the smallest positive integer that is divisible by both" />
+                    <Meta title="Least Common Multiples" description="the lowest common multiple of two integers 'a' and 'b',that is divisible by both" />
                 </Card>
                 <Card ref={fifthAppRef} hoverable className={fifthAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={

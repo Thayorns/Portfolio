@@ -1,6 +1,6 @@
 .App{
   margin: 0 auto;
-  height: 4600px;
+  height: 3300px;
   max-width: 1208px;
   width: 90%;
 }
@@ -30,6 +30,9 @@
 }
 
 @media screen and (max-width: 425px) {
+  .content-section{
+    height: 2100px;
+  }
   
   .navbar ol {
       display: none;
@@ -43,7 +46,7 @@
   .about-me p,
   .header-section p,
   .hobbies-section p{
-      font-size: 22px;
+      font-size: 20px;
   }
   .about-me span{
       font-size: 18px;
@@ -82,19 +85,71 @@
   .header-section {
       height: 650px;
   }
+  .content-section{
+    height: 1100px;
+  }
   .ant-card-hoverable {
       width: 380px;
   }
   .ant-card .ant-card-meta-detail >div:not(:last-child){
-      font-size: 25px;
+      font-size: 20px;
   }
   .ant-card .ant-card-meta-description{
-      font-size: 21px;
+      font-size: 16px;
   }
 }
 @media screen and (min-width: 1440px) {
+  .App{
+    height: 3000px;
+  }
   .header-section {
       height: 700px;
   }
+  .content-section{
+    height: 800px;
+  }
 }
+/* ---------------------- */
+
+/* SCROLL ANIMATION */
+h3,
+.ant-card-hoverable,
+.footer-section p,
+.hobbies-section >p,
+.footer-section ul{
+    transform: translateY(60px);
+    transition:  1s;
+    opacity: 0;
+}
+
+.ant-card-hoverable {
+    width: 280px;
+    height: 280px;
+    margin: 25px 20px;
+}
+.ant-card-bordered .ant-card-cover{
+  height: 0px;
+}
+.ant-card .ant-card-cover img{
+  height: 280px;
+  border-radius: 8px 8px 8px 8px;
+}
+.ant-card .ant-card-body{
+  height: 200px;
+}
+.ant-card .ant-card-meta-title,
+.ant-card .ant-card-meta-description{
+  color: white;
+  font-weight: 200;
+}
+.ant-card .ant-card-meta,
+.ant-card .ant-card-meta-detail{
+  background: #00000082;
+}
+
+.slide-in {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+
 /* ---------------------- */
