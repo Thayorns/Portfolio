@@ -73,11 +73,11 @@
 /* ---------------------- */
 
 /* MENU-BURGER */
-.anticon {
+.header-section .anticon {
     float: right;
     margin: 14px 12px;
 }
-.anticon svg{
+.header-section .anticon svg{
     height: 30px;
     width: 30px;
 }

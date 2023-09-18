@@ -1,4 +1,5 @@
 import { useInView  } from 'react-intersection-observer'
+import { FloatButton } from 'antd';
 
 
 import './footer.css'
@@ -25,6 +26,7 @@ const Footer = () => {
                <li><a href='a'>hh.ru link</a></li>
                <li><a href='a'>https://career.habr.com/vacancies?type=suitable</a></li>
             </ul>
+            <FloatButton.BackTop/>
         </section>
     )
 }

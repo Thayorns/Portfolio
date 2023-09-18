@@ -12,3 +12,16 @@
     word-wrap: break-word;
     padding-right: 15px;
 }
+.footer-section .ant-float-btn-default .ant-float-btn-body .ant-float-btn-content .ant-float-btn-icon{
+    /* color: black; */
+}
+.ant-float-btn .ant-float-btn-body .ant-float-btn-content{
+    /* overflow: visible; */
+    /* background-color: black; */
+}
+.ant-float-btn-default .ant-float-btn-body{
+    background-color: black;
+}
+.ant-float-btn-default{
+    background-color: black;
+}
