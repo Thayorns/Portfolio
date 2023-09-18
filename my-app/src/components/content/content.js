@@ -24,7 +24,7 @@ const Content = () => {
                         />
                     }
                 >
-                    <Meta title="Jakals of Azeroth" description="game community app" />
+                    <Meta title="Jakals of Azeroth"/>
                 </Card>
                 <Card ref={primalsAppRef} hoverable className={primalsAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
@@ -33,7 +33,7 @@ const Content = () => {
                         />
                     }
                 >
-                    <Meta title="Primals" description="In mathematics, the sieve of Eratosthenes is an ancient algorithm .." />
+                    <Meta title="Sieve of Eratosthenes"/>
                 </Card>
                 <Card ref={calculatorAppRef} hoverable className={calculatorAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
@@ -42,7 +42,7 @@ const Content = () => {
                         />
                     }
                 >
-                    <Meta title="Calculator" description="we all know it is absolutely necessary" />
+                    <Meta title="Calculator"/>
                 </Card>
                 <Card ref={leastCommonMultipleAppRef} hoverable className={leastCommonMultipleAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
@@ -51,7 +51,7 @@ const Content = () => {
                         />
                     }
                 >
-                    <Meta title="Least Common Multiples" description="the lowest common multiple of two integers 'a' and 'b',that is divisible by both" />
+                    <Meta title="Least Common Multiples"/>
                 </Card>
                 <Card ref={fifthAppRef} hoverable className={fifthAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
@@ -60,7 +60,7 @@ const Content = () => {
                         />
                     }
                 >
-                    <Meta title="the fifth something" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis nihil" />
+                    <Meta title="the fifth something"/>
                 </Card>
                 <Card ref={sixthAppRef} hoverable className={sixthAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
@@ -69,7 +69,7 @@ const Content = () => {
                         />
                     }
                 >
-                    <Meta title="the sixth something" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis nihil" />
+                    <Meta title="the sixth something"/>
                 </Card>
             </div>
         </section>

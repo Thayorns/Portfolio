@@ -14,8 +14,8 @@ const Hobbies = () => {
     const { ref: planesSecondRef, inView: planesSecondInView} = useInView({threshold: 0.3, triggerOnce: true});
 
     return (
-        <section className='hobbies-section'  id='about'>
-            <p ref={headerParagrathTagRef} className={headerParagrathTagInView ? 'slide-in' : ''}>
+        <section className='hobbies-section'  >
+            <p id='about' ref={headerParagrathTagRef} className={headerParagrathTagInView ? 'slide-in' : ''}>
                 By the way, i find myself in an active life position so these are my hobbies below:
             </p>
                     
@@ -27,7 +27,7 @@ const Hobbies = () => {
                         />
                     }
                 >
-                    <Meta title="Airsoft" description="fun military simulator" />
+                    <Meta title="Airsoft"/>
                 </Card>
                 <Card ref={airsoftSecondRef} hoverable className={airsoftSecondInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
@@ -36,7 +36,7 @@ const Hobbies = () => {
                         />
                     }
                 >
-                    <Meta title="Jakals & MSOT 4112" description="The most powerful thing in airsoft is to cooperate with others" />
+                    <Meta title="Jakals & MSOT 4112"/>
                 </Card>
                 
                 <Card ref={gamingFirstRef} hoverable className={gamingFirstInView ? 'ant-card-hoverable slide-in' : ''}
@@ -46,7 +46,7 @@ const Hobbies = () => {
                         />
                     }
                 >
-                    <Meta title="Gaming.." description="especially with my friends" />
+                    <Meta title="Gaming.."/>
                 </Card>
                 <Card ref={gamingSecondRef} hoverable className={gamingSecondInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
@@ -55,14 +55,14 @@ const Hobbies = () => {
                         />
                     }
                 >
-                    <Meta title="'Jakals of Azeroth'" description="By the way, my very 1st pet-project was dedicated to our game-community" />
+                    <Meta title="'Jakals of Azeroth'"/>
                 </Card>  
                 <Card ref={planesFirstRef} hoverable className={planesFirstInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
                         <img alt="Planes" src={require('../../images/planes.jpg')}/>
                     }
                 >
-                    <Meta title="planes" description="learning to fly" />
+                    <Meta title="planes"/>
                 </Card>
 
                 <Card ref={planesSecondRef} hoverable className={planesSecondInView ? 'ant-card-hoverable slide-in' : ''}
@@ -70,7 +70,7 @@ const Hobbies = () => {
                         <img alt="Planes" src={require('../../images/plane.jpg')}/>
                     }
                 >
-                    <Meta title="Piper PA" description="This one is my favourite model. It was love at first sight and i don't want any other" />
+                    <Meta title="Piper PA"/>
                 </Card>
             </div>
         </section>

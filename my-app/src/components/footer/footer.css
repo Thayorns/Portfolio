@@ -1,27 +1,45 @@
 .footer-section {
-    height: 400px;
+    height: 650px;
     background: #000000;
     color: white;
 }
-.footer-section ul,
+.footer-section ul{
+    font-size: 18px;
+}
 .footer-section p{
     font-size: 20px;
-    text-align: left;
+    text-align: center;
+    margin-top: 40px;
 }
 .footer-section ul li {
     word-wrap: break-word;
-    padding-right: 15px;
+    padding: 10px 15px;
+    /* list-style: none; */
 }
-.footer-section .ant-float-btn-default .ant-float-btn-body .ant-float-btn-content .ant-float-btn-icon{
-    /* color: black; */
+.ant-descriptions .ant-descriptions-title,
+.ant-descriptions .ant-descriptions-item-label,
+.ant-descriptions .ant-descriptions-item-content{
+    color: white;
+    font-size: 18px;
 }
-.ant-float-btn .ant-float-btn-body .ant-float-btn-content{
-    /* overflow: visible; */
-    /* background-color: black; */
+.ant-descriptions .ant-descriptions-row >td,
+.ant-descriptions .ant-descriptions-row >th{
+    padding: 5px 15px;
 }
-.ant-float-btn-default .ant-float-btn-body{
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.gitHub-icon svg{
+    width: 40px;
+    height: 40px;
+}
+.footer-section .ant-float-btn-default .ant-float-btn-body{
     background-color: black;
+    
 }
-.ant-float-btn-default{
+.footer-section .ant-float-btn-default{
     background-color: black;
+    margin-right: 25px;
 }
