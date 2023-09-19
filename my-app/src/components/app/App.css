@@ -138,9 +138,12 @@ h3,
 }
 
 .ant-card-hoverable {
-    width: 280px;
-    height: 280px;
-    margin: 25px 20px;
+  width: 280px;
+  height: 280px;
+  margin: 25px 20px;
+}
+.ant-card-hoverable:hover{
+  box-shadow: rgba(228, 229, 231, 0.739) 0px 8px 24px;
 }
 .ant-card-bordered .ant-card-cover{
   height: 0px;

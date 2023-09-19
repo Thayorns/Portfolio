@@ -19,9 +19,9 @@ const Content = () => {
             <div className='projects'>
                 <Card ref={jakalsAppRef} hoverable className={jakalsAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
-                        <img alt="jakals-app" 
-                            src={require('../../images/jakals.jpg')} 
-                        />
+                        <a href='https://jakals-of-azeroth.netlify.app/' target='_blank' rel="noopener noreferrer"> 
+                            <img alt="jakals-app" src={require('../../images/jakals.jpg')} />
+                        </a>
                     }
                 >
                     <Meta title="Jakals of Azeroth"/>
