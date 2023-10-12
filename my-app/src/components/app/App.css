@@ -149,6 +149,7 @@ h3,
   height: 0px;
 }
 .ant-card .ant-card-cover img{
+  width: 280px;
   height: 280px;
   border-radius: 5px 5px;
 }
