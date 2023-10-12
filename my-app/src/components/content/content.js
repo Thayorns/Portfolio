@@ -28,9 +28,9 @@ const Content = () => {
                 </Card>
                 <Card ref={primalsAppRef} hoverable className={primalsAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
-                        <img alt="find primals app" 
-                            src={require('../../images/primals.jpg')} 
-                        />
+                        <a href='https://primals.netlify.app/' target='_blank' rel="noopener noreferrer"> 
+                            <img alt="find primals app" src={require('../../images/primals.jpg')} />
+                         </a>
                     }
                 >
                     <Meta title="Sieve of Eratosthenes"/>
