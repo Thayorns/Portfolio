@@ -30,19 +30,21 @@ const Content = () => {
                     cover={
                         <a href='https://primals.netlify.app/' target='_blank' rel="noopener noreferrer"> 
                             <img alt="find primals app" src={require('../../images/primals.jpg')} />
-                         </a>
+                        </a>
                     }
                 >
                     <Meta title="Sieve of Eratosthenes"/>
                 </Card>
                 <Card ref={calculatorAppRef} hoverable className={calculatorAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
-                        <img alt="calculator-app" 
-                            src={require('../../images/calculator.jpg')} 
-                        />
+                        <a href='https://black-bears-brewery.netlify.app/' target='_blank' rel="noopener noreferrer">                            
+                            <img alt="brewery-app" style={{height: '200px', width: '280px',paddingTop: '50px'}}
+                                src={require('../../images/bigLogo.jpg')} 
+                            />
+                        </a>
                     }
                 >
-                    <Meta title="Calculator"/>
+                    <Meta title="Black Bears Brewery"/>
                 </Card>
                 <Card ref={leastCommonMultipleAppRef} hoverable className={leastCommonMultipleAppInView ? 'ant-card-hoverable slide-in' : ''}
                     cover={
