@@ -2,18 +2,23 @@ import Header from '../header/header'
 import Content from '../content/content'
 import Footer from '../footer/footer'
 import Hobbies from '../hobbies/hobbies';
-// import  { useState } from 'react'
+import  { useState } from 'react'
 // import { VerticalAlignTopOutlined } from '@ant-design/icons';
 
 
 import './App.css';
 
 const App = () => {
-  
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+  }    
 
   return (
     <div className="App">
-      <Header/>
+      <Header toggleOpen={toggleOpen}
+        isOpen={isOpen}
+      />
       <Content/>
       <Hobbies/>
       <Footer/>

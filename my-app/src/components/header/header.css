@@ -1,25 +1,84 @@
 .header-section {
-    height: 600px;
+    height: 100vh;
+    max-width: 1208px;
+    width: 100%;
     background: black;
     color: white;
 }
 /* NAVBAR */
 .navbar{
-    width: 90%;
+    width: 100%;
     max-width: 1208px;
     padding: 15px 0;
     line-height: 60px;
     background: black;
     position: fixed;
     top: 0;
+    /* left: 0; */
+    border-bottom: 1px solid #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .ant-avatar.ant-avatar-icon{
     cursor: pointer;
     margin: 2px 0;
-    float: left;
 }
-.navbar ol {
-    float: right;
+.burger-button{
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+}
+.burger-line{
+    display: inline-block;
+    width: 35px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+}
+.burger-content{
+    padding-top: 120px;
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+.menu-item{
+    text-align: center;
+    padding: 5px;
+    margin: 10px auto;
+    width: 30%;
+    font-size: 26px;
+    font-weight: 200;
+    color: black;
+}
+
+.menu-item:hover,
+.menu-item:focus,
+.menu-item a:hover,
+.ant-breadcrumb a:hover{
+    background: white;
+    color: black;
+    scale: 1.2;
+    transition: .4s;
+}
+.progress-bar {
+    max-width: 1208px;
+    width: 100%;
+    /* bottom: 0; */
+    top: 95px;
+    /* left: 0; */
+    z-index: 2;
+    position: fixed;
+    height: 5px;
+    background: rgb(255, 238, 0);
+    bottom: 100px;
+}
+.ant-avatar.ant-avatar-icon{
+    border: 1px solid  rgb(255, 255, 255);
 }
 .ant-breadcrumb .ant-breadcrumb-link,
 .ant-breadcrumb .ant-breadcrumb-separator{
@@ -28,30 +87,43 @@
 }
 .ant-breadcrumb .ant-breadcrumb-separator,.ant-breadcrumb a {
     color: white;
-    font-size: 23px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: 200;
 }
 .ant-breadcrumb a {
     height: 60px;
-}
-.ant-breadcrumb a:hover {
-    background-color: #f5f7f7;
-    color: black;
 }
 /* ---------------------- */
 
 /* ABOUT ME DIV */
 .about-me {
-    height: 600px;
-    max-height: 800px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url('../../images/valentine-skywalker.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.about-me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle farthest-corner at center center, rgba(0, 0, 0, 0.568), rgb(0, 0, 0));
+    
+    /* Применяем эффект размытия. Увеличьте значение для большего размытия. */
+    /* filter: blur(10px);  */
 }
 .about-me h1{
     font-size: 48px;
-    margin: 120px 0 15px;    
+    margin: 80px 0 15px;
+    padding: 10px;
+     
 }
 .about-me p,
 .footer-section p,
@@ -61,36 +133,39 @@
     font-size: 24px;
 }
 .about-me h1,
-.about-me p{
+.about-me p,
+hr{
     text-align: center;
+    z-index: 1; 
 }
 .about-me span{
+    z-index: 1; 
     font-size: 22px;
+    width: 80%;
     margin: 30px 0 0 0;
     padding: 0 30px;
-    text-align: left;
+    text-align: center;
+}
+.true-span{
+    color: green;
 }
 /* ---------------------- */
 
-/* MENU-BURGER */
-.header-section .anticon {
-    float: right;
-    margin: 14px 12px;
-}
-.header-section .anticon svg{
-    height: 30px;
-    width: 30px;
-}
-.ant-dropdown .ant-dropdown-menu{
-    margin: 20px auto 0 20px;
-    background: rgb(0, 0, 0);
-    width: 300px;
-    border-bottom: 1px solid white;
-    border-radius: 0%;
-    border-color: #828585;
-}
-.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content >a{
-    font-weight: 600;
-    font-size: 19px;
-}
-/* ---------------------- */
+/* MEDIA QUERIES */
+@media screen and (max-width: 704px) {
+    .ant-breadcrumb{
+      display: none;
+    }
+    .burger-button{
+      visibility: visible;
+    }
+  }
+  @media screen and (min-width: 704px){
+    .ant-breadcrumb{
+      visibility: visible;
+    }
+    .burger-button,
+    .burger-content{
+      display: none;
+    }
+  }

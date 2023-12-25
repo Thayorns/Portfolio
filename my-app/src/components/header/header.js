@@ -1,13 +1,27 @@
-import { Breadcrumb, Avatar, Dropdown } from 'antd';
-import { MenuOutlined } from '@ant-design/icons';
+import { Breadcrumb, Avatar } from 'antd';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-
+import { motion , AnimatePresence, useSpring, useScroll} from "framer-motion"
 
 import './header.css'
 
-const Header = () => {
-  
-    const avatar = <img src={require('../../images/avatar.jpg')} alt='avatar'/>
+const Header = ({toggleOpen, isOpen}) => {
+   
+    const { scrollYProgress } = useScroll()
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001,
+      });
+    
+      const avatar = 
+        <motion.img whileHover={{ scale: 1.2 }} 
+            whileTap={{ scale: 1 }}
+            transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+            }} src={require('../../images/avatar.jpg')}  alt="avatar"
+        />
     const breadcrumbLinks = [
         {title: <AnchorLink offset={() => 100} href="#about">About Me</AnchorLink>},
         {title: <AnchorLink offset={() => 100} href="#projects">Projects</AnchorLink>},
@@ -24,20 +38,75 @@ const Header = () => {
 
     return (
         <section className='header-section'>
-            <nav className='navbar' style={{zIndex: 1}}>
+            
+            <motion.nav className="navbar" style={{zIndex: 3}}>
                 <Avatar size={60} icon={avatar}/>
-                
-                <Dropdown menu={{ items }} trigger={['click']}>
-                    <MenuOutlined onClick={(e) => e.preventDefault()} /> 
-                </Dropdown>
-                
+                <button className="burger-button" onClick={toggleOpen}>
+                    <motion.span
+                        className="burger-line"
+                        initial={{ rotate: 0, y: 0 }}
+                        animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 15 : 0  }}
+                    ></motion.span>
+                    <motion.span
+                        className="burger-line"
+                        initial={{ opacity: 1 }}
+                        animate={{ opacity: isOpen ? 0 : 1 }}
+                    ></motion.span>
+                    <motion.span
+                        className="burger-line"
+                        initial={{ rotate: 0, y: 0 }}
+                        animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? -15 : 0  }}
+                    ></motion.span>
+                </button>
+
                 <Breadcrumb tabIndex={0} items = {breadcrumbLinks}/>
-            </nav>
+                
+            </motion.nav>
+            <motion.div
+                className="progress-bar"
+                style={{ scaleX }}
+            />
+            <AnimatePresence mode="wait">
+                {isOpen && (
+                    <motion.div className="burger-content"
+                        initial={{ opacity: 0, y: -500 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -500, 
+                            transition: { delay: 0.05,
+                            type: "spring"
+                            }
+                        }}
+                    >
+                        {items.map((item, key) => (
+                            <motion.div
+                                key={item.key}
+                                initial={{ opacity: 0, x: -100 }}
+                                animate={{ opacity: 1, x: 0, transition:{duration: 0.4, delay: key * 0.1 }}}
+                                exit={{ opacity: 0, x: -100 }}
+                                className="menu-item"
+                                onClick={() => {
+                                        // handlePageChoose(item.key)
+                                        toggleOpen(item.key)
+                                    }
+                                }
+                            >
+                            <motion.div 
+                                // className={activePage === item.key ? 'title active' : 'title'}
+                            >
+                                {item.label}
+                            </motion.div>
+                            
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                )}
+            </AnimatePresence>
+            
             <div className='about-me'>
                 <h1>Hey! I'm Valentine</h1>
                 <hr style={{borderColor: "#828585", width: '250px'}}></hr>
                 <p>a frontend developer</p>
-                <span>and this is the case when 'coding' === 'my passion' // true</span>
+                <span>and this is the case when 'coding' === 'my passion' <quote className='true-span'>// true</quote></span>
             </div>   
         </section>
     )

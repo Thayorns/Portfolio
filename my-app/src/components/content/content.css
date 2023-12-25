@@ -1,13 +1,24 @@
 .content-section {
-    height: 2750px;
+    width: 100%;
     background: black;
     color: white;
 }
 .content-section h3{
     margin-top: 0;
-    /* text-align: center; */
+    margin: 0 auto;
 }
-
+.projects{
+    margin: 0 auto;
+}
+.card-container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: -120px;
+}
 /* MEDIA QUERIES */
 @media screen and (320px < width < 768px) {
     .content-section {
