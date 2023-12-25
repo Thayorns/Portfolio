@@ -68,9 +68,7 @@
 .progress-bar {
     max-width: 1208px;
     width: 100%;
-    /* bottom: 0; */
     top: 95px;
-    /* left: 0; */
     z-index: 2;
     position: fixed;
     height: 5px;
