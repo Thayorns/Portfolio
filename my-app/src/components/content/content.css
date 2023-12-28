@@ -1,4 +1,5 @@
 .content-section {
+    margin-top: 100px;
     width: 100%;
     background: black;
     color: white;
@@ -12,21 +13,3 @@
     width: 100%;
     padding-bottom: 100px;
 }
-
-/* MEDIA QUERIES */
-/* @media screen and (320px < width < 768px) {
-    .content-section {
-        height: 3000px;
-    }
-}
-@media screen and (704px < width < 1024px) {
-    .content-section {
-        height: 1100px; 
-    }
-}
-@media screen and (min-width: 1024px) {
-    .content-section {
-        height: 800px; 
-    }
-} */
-/* ---------------------- */

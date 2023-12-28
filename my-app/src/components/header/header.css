@@ -120,7 +120,7 @@
     /* filter: blur(10px);  */
 }
 .about-me h1{
-    font-size: 48px;
+    font-size: 46px;
     margin: 80px 0 15px;
     padding: 10px;
      
@@ -130,7 +130,7 @@
 .header-section p,
 .hobbies-section p {
     padding: 0 10px;
-    font-size: 24px;
+    font-size: 27px;
 }
 .about-me h1,
 .about-me p,
@@ -140,7 +140,7 @@ hr{
 }
 .about-me span{
     z-index: 1; 
-    font-size: 22px;
+    font-size: 26px;
     width: 80%;
     margin: 30px 0 0 0;
     padding: 0 30px;

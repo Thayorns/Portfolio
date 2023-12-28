@@ -32,7 +32,6 @@ const Content = () => {
 
     return (
         <section  id='projects' className='content-section'>
-            <h3>Projects:</h3>
             <div className='projects'>
                 
             </div>

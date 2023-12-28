@@ -3,14 +3,16 @@ import { motion } from "framer-motion"
 import './info.css'
 const liVariants = {
     offscreen: {
-      y: 300
+      y: 400,
+      opacity: 0
     },
     onscreen: {
-      y: 50,
+      y: 0,
+      opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.3,
-        duration: 0.8
+        bounce: 0.4,
+        duration: 0.5
       }
     }
 }
@@ -31,7 +33,8 @@ const infoImages = imageLinks.map(img => {
         src={img} 
         alt=''
         whileTap={styles.whileTap}
-        transition={styles.transition}/>
+        transition={styles.transition}
+    />
 })
 
 const lItem = [
