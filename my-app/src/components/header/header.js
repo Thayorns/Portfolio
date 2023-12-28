@@ -1,7 +1,7 @@
 import { Breadcrumb, Avatar } from 'antd';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { motion , AnimatePresence, useSpring, useScroll} from "framer-motion"
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 import './header.css'
 const TypingEffect = () => {

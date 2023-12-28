@@ -1,4 +1,5 @@
 import Header from '../header/header'
+import Info from '../info/info';
 import Content from '../content/content'
 import Footer from '../footer/footer'
 import Hobbies from '../hobbies/hobbies';
@@ -19,6 +20,7 @@ const App = () => {
       <Header toggleOpen={toggleOpen}
         isOpen={isOpen}
       />
+      <Info/>
       <Content/>
       <Hobbies/>
       <Footer/>

@@ -9,7 +9,7 @@
 .navbar{
     width: 100%;
     max-width: 1208px;
-    padding: 15px 0;
+    padding: 5px 0;
     line-height: 60px;
     background: black;
     position: fixed;
@@ -72,16 +72,14 @@
 .progress-bar {
     max-width: 1208px;
     width: 100%;
-    top: 95px;
+    top: 75px;
     z-index: 2;
     position: fixed;
     height: 5px;
     background: rgb(255, 238, 0);
     bottom: 100px;
 }
-.ant-avatar.ant-avatar-icon{
-    border: 1px solid  rgb(255, 255, 255);
-}
+
 .ant-breadcrumb .ant-breadcrumb-link,
 .ant-breadcrumb .ant-breadcrumb-separator{
     line-height: 60px;
@@ -131,7 +129,7 @@
 .footer-section p,
 .header-section p,
 .hobbies-section p {
-    padding: 0 30px;
+    padding: 0 10px;
     font-size: 24px;
 }
 .about-me h1,
