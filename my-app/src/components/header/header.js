@@ -1,9 +1,32 @@
 import { Breadcrumb, Avatar } from 'antd';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { motion , AnimatePresence, useSpring, useScroll} from "framer-motion"
+import React, { useState, useEffect } from 'react'
 
 import './header.css'
-
+const TypingEffect = () => {
+    const text = 'a  frontend developer.'
+    const [currentText, setCurrentText] = useState('')
+    
+    useEffect(() => {
+        let index = 0;
+        
+        const intervalId = setInterval(() => {
+          if (index < text.length-1) {    // добавляем эту проверку
+            setCurrentText((prevText) => prevText + text[index]);
+            index++;
+          }
+          
+          if (index === text.length) {
+            clearInterval(intervalId); 
+          }
+        }, 150);
+        
+        return () => clearInterval(intervalId);
+      }, []); 
+    
+    return <p>{currentText}<span className="cursor">|</span></p>
+}
 const Header = ({toggleOpen, isOpen}) => {
    
     const { scrollYProgress } = useScroll()
@@ -103,10 +126,13 @@ const Header = ({toggleOpen, isOpen}) => {
             </AnimatePresence>
             
             <div className='about-me'>
-                <h1>Hey! I'm Valentine</h1>
+                <h1>Hey! I'm Valentine,</h1>
                 <hr style={{borderColor: "#828585", width: '250px'}}></hr>
-                <p>a frontend developer</p>
-                <span>and this is the case when 'coding' === 'my passion' <quote className='true-span'>// true</quote></span>
+
+                <p>
+                    <TypingEffect/>
+                </p>
+                <span>and this is the case when 'coding' === 'my passion' <quote className='true-span'>\\ true</quote></span>
             </div>   
         </section>
     )

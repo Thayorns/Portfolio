@@ -9,18 +9,12 @@
 }
 .projects{
     margin: 0 auto;
+    width: 100%;
+    padding-bottom: 100px;
 }
-.card-container {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding-top: 20px;
-    margin-bottom: -120px;
-}
+
 /* MEDIA QUERIES */
-@media screen and (320px < width < 768px) {
+/* @media screen and (320px < width < 768px) {
     .content-section {
         height: 3000px;
     }
@@ -34,5 +28,5 @@
     .content-section {
         height: 800px; 
     }
-}
+} */
 /* ---------------------- */
