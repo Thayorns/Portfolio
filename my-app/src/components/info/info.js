@@ -12,7 +12,7 @@ const liVariants = {
       transition: {
         type: "spring",
         bounce: 0.4,
-        duration: 0.5
+        duration: 0.8
       }
     }
 }

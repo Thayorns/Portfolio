@@ -12,4 +12,44 @@
     margin: 0 auto;
     width: 100%;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.project-container{
+    margin: 20px auto;
+    background: black;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+}
+.project-link-container{
+    width: 40%;
+    display: inline-block;
+}
+.project-img{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.project-info-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.project-info-container h2,
+.project-info-container span{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid white;
+
 }
