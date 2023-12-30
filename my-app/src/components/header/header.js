@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 
 import './header.css'
 const TypingEffect = () => {
-    const text = 'a  frontend developer.'
+    const text = 'a  frontend developer'
     const [currentText, setCurrentText] = useState('')
     
     useEffect(() => {
