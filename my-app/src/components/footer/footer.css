@@ -1,15 +1,16 @@
 .footer-section {
-    height: 650px;
+    /* height: 650px; */
+    padding: 40px;
     background: #000000;
     color: white;
 }
 .footer-section ul{
     font-size: 18px;
 }
-.footer-section p{
-    font-size: 20px;
+.footer-section h2{
+    /* font-size: 20px; */
     text-align: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 .footer-section ul li {
     word-wrap: break-word;

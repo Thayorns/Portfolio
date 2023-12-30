@@ -2,7 +2,7 @@ import Header from '../header/header'
 import Info from '../info/info';
 import Content from '../content/content'
 import Footer from '../footer/footer'
-import Hobbies from '../hobbies/hobbies';
+// import Hobbies from '../hobbies/hobbies';
 import  { useState } from 'react'
 // import { VerticalAlignTopOutlined } from '@ant-design/icons';
 
@@ -22,7 +22,7 @@ const App = () => {
       />
       <Info/>
       <Content/>
-      <Hobbies/>
+      {/* <Hobbies/> */}
       <Footer/>
       
     </div>

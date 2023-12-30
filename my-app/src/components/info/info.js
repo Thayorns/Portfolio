@@ -3,17 +3,12 @@ import { motion } from "framer-motion"
 import './info.css'
 const liVariants = {
     offscreen: {
-      y: 400,
+      y: 100,
       opacity: 0
     },
     onscreen: {
       y: 0,
       opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 0.8
-      }
     }
 }
 const styles = {
@@ -28,15 +23,17 @@ const imageLinks = [
     require('../../images/happy-programmer.png'),
     require('../../images/js-laptop-icon.png')
 ]
-const infoImages = imageLinks.map(img => {
-    return <motion.img className='info-icons-img' 
-        src={img} 
-        alt=''
-        whileTap={styles.whileTap}
-        transition={styles.transition}
-    />
-})
-
+const InfoImages = () => {
+    return imageLinks.map(img => {
+        return <motion.img className='info-icons-img'
+            key={img} 
+            src={img} 
+            alt=''
+            whileTap={styles.whileTap}
+            transition={styles.transition}
+        />
+    })
+}
 const lItem = [
     'Continually learning new things',
     'Seeking mastery in each line of code',
@@ -45,26 +42,33 @@ const lItem = [
     'Relentlessly pursue knowledge',
     'Turning complexity into simplicity with love and expertise'
 ]
-const uL = lItem.map(li => {
-    return  (
-        <motion.div initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.5 }}>
-            <motion.li variants={liVariants} className='info-text-list-item'>
-                <img className='done-icon' src={require('../../images/done-icon.png')} alt=''/>
-                {li}
-            </motion.li>
-        </motion.div>
-    )
-})
+const Ul = () => {
+    return lItem.map(li => {
+        return  (
+            <motion.div className="info-text-list-item-container"
+                key={li}
+                whileHover={{ scale: 1.1 }}
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.4 }}
+            >
+                <motion.li variants={liVariants} 
+                    className='info-text-list-item'>
+                    <img className='done-icon' src={require('../../images/done-icon.png')} alt=''/>
+                    {li}
+                </motion.li>
+            </motion.div>
+        )
+    })
+}
 const Info = () => {
     return (
         <section className='info-section'>
             <div className='info-icons'>
-                {infoImages}
+                <InfoImages/>
             </div>
             <div className='info-text'>
-                {uL}
+                <Ul/>
             </div>
         </section>
     )

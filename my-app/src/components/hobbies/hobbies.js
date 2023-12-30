@@ -5,7 +5,6 @@ import './hobbies.css'
 
 const Hobbies = () => {
     const { Meta } = Card;
-    const { ref: headerParagrathTagRef, inView: headerParagrathTagInView} = useInView({threshold: 0.3, triggerOnce: true});
     const { ref: airsoftFirstRef, inView: airsoftFirstInView} = useInView({threshold: 0.3, triggerOnce: true});
     const { ref: airsoftSecondRef, inView: airsoftSecondInView} = useInView({threshold: 0.3, triggerOnce: true});
     const { ref: gamingFirstRef, inView: gamingFirstInView} = useInView({threshold: 0.3, triggerOnce: true});
@@ -15,9 +14,6 @@ const Hobbies = () => {
 
     return (
         <section className='hobbies-section'  >
-            <p id='about' ref={headerParagrathTagRef} className={headerParagrathTagInView ? 'slide-in' : ''}>
-                By the way, i find myself in an active life position so these are my hobbies below:
-            </p>
                     
             <div className='hobbies-cards'>
                 <Card ref={airsoftFirstRef} hoverable className={airsoftFirstInView ? 'ant-card-hoverable slide-in' : ''}
