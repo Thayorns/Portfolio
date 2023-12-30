@@ -129,9 +129,7 @@ const Header = ({toggleOpen, isOpen}) => {
                 <h1>Hey! I'm Valentine,</h1>
                 <hr style={{borderColor: "#828585", width: '250px'}}></hr>
 
-                <p>
                     <TypingEffect/>
-                </p>
                 <span>and this is the case when 'coding' === 'my passion' <quote className='true-span'>\\ true</quote></span>
             </div>   
         </section>

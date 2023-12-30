@@ -136,7 +136,10 @@
 .about-me p,
 hr{
     text-align: center;
-    z-index: 1; 
+    z-index: 1;
+}
+.about-me p{
+    width: 90%;
 }
 .about-me span{
     z-index: 1; 
