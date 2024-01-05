@@ -16,6 +16,7 @@ const projectVariants = {
 const projects = [
     {src: require('../../images/smallLogo.png'), title: 'Black Bears brewery', description: 'Here is my first freelance project. There is no such thing as too much beer, you know..',link: 'https://black-bears-brewery.com/'},
     {src: require('../../images/primals.jpg'), title: 'Primals', description: 'This app allows you to find out if your typed number is prime or not',link: 'https://primals.netlify.app/'},
+    {src: require('../../images/fetch-data.png'), title: 'Fetch data', description: "This SPA is fetching data from the external link and renders json data as info blocks",link: 'https://fetch-data-onclick.netlify.app/'},
     {src: require('../../images/jakals.jpg'), title: 'Jakals of Azeroth', description: 'This is my very 1st SPA dedicated to the gaming community',link: 'https://jakals-of-azeroth.netlify.app/'},
 ]
 
