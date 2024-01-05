@@ -1,5 +1,5 @@
 import { FloatButton, Descriptions  } from 'antd';
-import { GithubOutlined, LinkedinOutlined } from '@ant-design/icons';
+import { GithubOutlined} from '@ant-design/icons';
 
 import './footer.css'
 const items = [
@@ -20,19 +20,32 @@ const items = [
     },
     {
       key: '4',
-      children: <a href='https://github.com/Thayorns'
-                    target='_blank'
-                    rel="noopener noreferrer">
-                    <GithubOutlined className='gitHub-icon'/>
-                </a>,
+      children: 
+        <a href='https://github.com/Thayorns'
+          target='_blank'
+          rel="noopener noreferrer">
+          <GithubOutlined className='gitHub-icon'/>
+        </a>,
     },
     {
       key: '5',
-      children: <a href='https://career.habr.com/thayorn'
-                    target='_blank'
-                    rel="noopener noreferrer">
-                    <LinkedinOutlined className='gitHub-icon'/>
-                </a>,
+      children: 
+        <a href='https://hh.ru/resume/acb11d21ff05b3f52e0039ed1f677658354a48'
+          target='_blank'
+          rel="noopener noreferrer">
+          <img className='gitHub-icon' alt=''
+            src={require('../../images/HeadHunter_logo.png')}/>
+        </a>,
+    },
+    {
+      key: '6',
+      children: 
+        <a href='https://web.telegram.org/k/#@thayorn'
+          target='_blank'
+          rel="noopener noreferrer">
+          <img className='gitHub-icon' alt=''
+            src={require('../../images/telegram.png')}/>
+        </a>,
     },
   ];
 

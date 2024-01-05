@@ -32,7 +32,8 @@ a{
     cursor: pointer;
     color: white;
 }
-.gitHub-icon svg{
+.gitHub-icon svg,
+.gitHub-icon {
     width: 40px;
     height: 40px;
 }
