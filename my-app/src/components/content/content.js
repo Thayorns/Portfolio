@@ -14,6 +14,7 @@ const projectVariants = {
 
 
 const projects = [
+    {src: require('../../images/rtk-query.png'), title: 'RTK query', description: 'React SPA using RTK query, FSD methodology && react router dom 6',link: 'https://rtkquery-fsd-rrd6.netlify.app/'},
     {src: require('../../images/smallLogo.png'), title: 'Black Bears brewery', description: 'Here is my first freelance project. There is no such thing as too much beer, you know..',link: 'https://black-bears-brewery.com/'},
     {src: require('../../images/primals.jpg'), title: 'Primals', description: 'This app allows you to find out if your typed number is prime or not',link: 'https://primals.netlify.app/'},
     {src: require('../../images/fetch-data.png'), title: 'Fetch data', description: "This SPA is fetching data from the external link and renders json data as info blocks",link: 'https://fetch-data-onclick.netlify.app/'},
