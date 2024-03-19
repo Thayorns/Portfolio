@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import React from "react"
 
 import './content.css'
 const projectVariants = {
@@ -12,7 +13,12 @@ const projectVariants = {
     }
 }
 
-
+interface PetProjects {
+    src: any
+    title: string
+    description: string
+    link: string
+}
 const projects = [
     {src: require('../../images/rtk-query.png'), title: 'RTK query', description: 'React SPA using RTK query, FSD methodology && react router dom 6',link: 'https://rtkquery-fsd-rrd6.netlify.app/'},
     {src: require('../../images/smallLogo.png'), title: 'Black Bears brewery', description: 'Here is my first freelance project. There is no such thing as too much beer, you know..',link: 'https://black-bears-brewery.com/'},
@@ -26,9 +32,9 @@ const Content = () => {
         <section  id='projects' className='content-section'>
             <motion.div className='projects'>
                 {
-                    projects.map(project => {
+                    projects.map((project: PetProjects,index: number) => {
                         return (
-                            <motion.div className="project-container" key={project} variants={projectVariants}
+                            <motion.div className="project-container" key={index} variants={projectVariants}
                                 initial="offscreen"
                                 whileInView="onscreen"
                                 viewport={{ once: true, amount: 0.4 }}>

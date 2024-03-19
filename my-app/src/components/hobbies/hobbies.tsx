@@ -1,5 +1,6 @@
 import { useInView  } from 'react-intersection-observer'
 import { Card } from 'antd';
+import React from 'react'
 
 import './hobbies.css'
 

@@ -2,6 +2,7 @@ import { Breadcrumb, Avatar } from 'antd';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { motion , AnimatePresence, useSpring, useScroll} from "framer-motion"
 import { useState, useEffect } from 'react'
+import React from 'react'
 
 import './header.css'
 const TypingEffect = () => {
@@ -20,14 +21,19 @@ const TypingEffect = () => {
           if (index === text.length) {
             clearInterval(intervalId); 
           }
-        }, 150);
+        }, 80);
         
         return () => clearInterval(intervalId);
       }, []); 
     
     return <p>{currentText}<span className="cursor">|</span></p>
 }
-const Header = ({toggleOpen, isOpen}) => {
+
+type ToggleParams = {
+    toggleOpen: () => void
+    isOpen: boolean
+}
+const Header = ({toggleOpen, isOpen}: ToggleParams) => {
    
     const { scrollYProgress } = useScroll()
     const scaleX = useSpring(scrollYProgress, {
@@ -54,7 +60,7 @@ const Header = ({toggleOpen, isOpen}) => {
     const items = [
         // {label: <AnchorLink href="#about">About Me</AnchorLink>, key: '0',},
         {label: <AnchorLink href="#projects">Projects</AnchorLink>, key: '1',},
-        {label: <AnchorLink href="#contacts">Contacts</AnchorLink>,key: '2',}
+        {label: <AnchorLink href="#contacts">Contacts</AnchorLink>, key: '2',}
     ]
 
     
@@ -82,7 +88,7 @@ const Header = ({toggleOpen, isOpen}) => {
                     ></motion.span>
                 </button>
 
-                <Breadcrumb tabIndex={0} items = {breadcrumbLinks}/>
+                <Breadcrumb items = {breadcrumbLinks}/>
                 
             </motion.nav>
             <motion.div
@@ -100,16 +106,16 @@ const Header = ({toggleOpen, isOpen}) => {
                             }
                         }}
                     >
-                        {items.map((item, key) => (
+                        {items.map((item, index: number) => (
                             <motion.div
-                                key={item.key}
+                                key={index}
                                 initial={{ opacity: 0, x: -100 }}
-                                animate={{ opacity: 1, x: 0, transition:{duration: 0.4, delay: key * 0.1 }}}
+                                animate={{ opacity: 1, x: 0, transition:{duration: 0.4, delay: index * 0.1 }}}
                                 exit={{ opacity: 0, x: -100 }}
                                 className="menu-item"
                                 onClick={() => {
                                         // handlePageChoose(item.key)
-                                        toggleOpen(item.key)
+                                        toggleOpen()
                                     }
                                 }
                             >
@@ -130,7 +136,9 @@ const Header = ({toggleOpen, isOpen}) => {
                 <hr style={{borderColor: "#828585", width: '250px'}}></hr>
 
                     <TypingEffect/>
-                <span>and this is the case when 'coding' === 'my passion' <quote className='true-span'>\\ true</quote></span>
+                <span>and this is the case when 'coding' === 'my passion' 
+                    <span className='true-span'>\\ true</span>
+                </span>
             </div>   
         </section>
     )

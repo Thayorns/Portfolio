@@ -3,7 +3,7 @@ import Info from '../info/info';
 import Content from '../content/content'
 import Footer from '../footer/footer'
 // import Hobbies from '../hobbies/hobbies';
-import  { useState } from 'react'
+import React, { useState } from 'react'
 // import { VerticalAlignTopOutlined } from '@ant-design/icons';
 
 

@@ -1,5 +1,6 @@
 import { FloatButton, Descriptions  } from 'antd';
 import { GithubOutlined} from '@ant-design/icons';
+import React from 'react';
 
 import './footer.css'
 const items = [

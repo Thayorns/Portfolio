@@ -43,6 +43,8 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/react-anchor-link-smooth-scroll": "^1.0.5",
+    "@types/uuidjs": "^3.6.0",
     "react-scripts": "^5.0.1"
   }
 }
