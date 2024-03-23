@@ -13,12 +13,12 @@ const TypingEffect = () => {
         let index = 0;
         
         const intervalId = setInterval(() => {
-          if (index < text.length-1) {    // добавляем эту проверку
+          if (index < text.length - 1) {
             setCurrentText((prevText) => prevText + text[index]);
             index++;
           }
           
-          if (index === text.length) {
+          if (index === text.length - 1) {
             clearInterval(intervalId); 
           }
         }, 80);
@@ -137,7 +137,7 @@ const Header = ({toggleOpen, isOpen}: ToggleParams) => {
 
                     <TypingEffect/>
                 <span>and this is the case when 'coding' === 'my passion' 
-                    <span className='true-span'>\\ true</span>
+                    <span className='true-span'>\\true</span>
                 </span>
             </div>   
         </section>
