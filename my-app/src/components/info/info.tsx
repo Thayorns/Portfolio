@@ -25,12 +25,12 @@ const imageLinks = [
     require('../../images/js-laptop-icon.png')
 ]
 const lItem = [
-    'Continually learning new things',
-    'Seeking mastery in each line of code',
-    'Adore my craft, finding joy and satisfaction in every problem solved',
-    'Vowing to dedicate my life to development',
-    'Relentlessly pursue knowledge',
-    'Turning complexity into simplicity with love and expertise'
+    'Постоянно учусь новому.',
+    'Стремлюсь к мастерству в каждой строке кода.',
+    'Обожаю свое ремесло, нахожу радость и удовлетворение в каждой решенной проблеме.',
+    'Клянусь посвятить свою жизнь развитию.',
+    'Неустанно стремлюсь к знаниям.',
+    'Развиваю навыки не только фронтенд части, а также Node.js && MongoDB.'
 ]
 const Info = () => {
     return (

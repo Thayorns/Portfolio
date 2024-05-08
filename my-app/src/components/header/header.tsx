@@ -6,7 +6,7 @@ import React from 'react'
 
 import './header.css'
 const TypingEffect = () => {
-    const text = 'a  frontend developer'
+    const text = '  frontend разработчик.'
     const [currentText, setCurrentText] = useState('')
     
     useEffect(() => {
@@ -52,15 +52,15 @@ const Header = ({toggleOpen, isOpen}: ToggleParams) => {
             }} src={require('../../images/avatar.jpg')}  alt="avatar"
         />
     const breadcrumbLinks = [
-        {title: <AnchorLink offset={() => 100} href="#projects">Projects</AnchorLink>},
-        {title: <AnchorLink offset={() => 100} href="#contacts">Contacts</AnchorLink>},
+        {title: <AnchorLink offset={() => 100} href="#projects">Проекты</AnchorLink>},
+        {title: <AnchorLink offset={() => 100} href="#contacts">Контакты</AnchorLink>},
         // {title: <AnchorLink offset={() => 100} href="#about">About Me</AnchorLink>},
     ]
     // Burger-menu items:
     const items = [
         // {label: <AnchorLink href="#about">About Me</AnchorLink>, key: '0',},
-        {label: <AnchorLink href="#projects">Projects</AnchorLink>, key: '1',},
-        {label: <AnchorLink href="#contacts">Contacts</AnchorLink>, key: '2',}
+        {label: <AnchorLink href="#projects">Проекты</AnchorLink>, key: '1',},
+        {label: <AnchorLink href="#contacts">Контакты</AnchorLink>, key: '2',}
     ]
 
     
@@ -132,13 +132,13 @@ const Header = ({toggleOpen, isOpen}: ToggleParams) => {
             </AnimatePresence>
             
             <div className='about-me'>
-                <h1>Hey! I'm Valentine,</h1>
+                <h1>Привет, меня зовут Валентин,</h1>
                 <hr style={{borderColor: "#828585", width: '250px'}}></hr>
 
                     <TypingEffect/>
-                <span>and this is the case when 'coding' === 'my passion' 
+                {/* <span>and this is the case when 'coding' === 'my passion' 
                     <span className='true-span'>\\true</span>
-                </span>
+                </span> */}
             </div>   
         </section>
     )
