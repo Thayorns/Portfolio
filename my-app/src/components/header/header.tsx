@@ -6,7 +6,7 @@ import React from 'react'
 
 import './header.css'
 const TypingEffect = () => {
-    const text = '  frontend разработчик.'
+    const text = '  Я - фронтенд-разработчик.'
     const [currentText, setCurrentText] = useState('')
     
     useEffect(() => {
@@ -132,7 +132,7 @@ const Header = ({toggleOpen, isOpen}: ToggleParams) => {
             </AnimatePresence>
             
             <div className='about-me'>
-                <h1>Привет, меня зовут Валентин,</h1>
+                <h1>Привет, меня зовут Валентин!</h1>
                 <hr style={{borderColor: "#828585", width: '250px'}}></hr>
 
                     <TypingEffect/>
