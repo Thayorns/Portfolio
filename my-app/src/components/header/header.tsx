@@ -6,25 +6,20 @@ import React from 'react'
 
 import './header.css'
 const TypingEffect = () => {
-    const text = '  Я - фронтенд-разработчик.'
+    const text = 'Я начинающий фронтенд-разработчик.'
     const [currentText, setCurrentText] = useState('')
-    
+    const [index, setIndex] = useState(0);
+
     useEffect(() => {
-        let index = 0;
-        
-        const intervalId = setInterval(() => {
-          if (index < text.length - 1) {
-            setCurrentText((prevText) => prevText + text[index]);
-            index++;
-          }
-          
-          if (index === text.length - 1) {
-            clearInterval(intervalId); 
-          }
-        }, 80);
-        
-        return () => clearInterval(intervalId);
-      }, []); 
+        if (index < text.length) {
+            const intervalId = setTimeout(() => {
+                setCurrentText((prevText) => prevText + text[index]);
+                setIndex(index + 1);
+            }, 80);
+            
+            return () => clearTimeout(intervalId);
+        }
+    }, [index, text]);
     
     return <p>{currentText}<span className="cursor">|</span></p>
 }
