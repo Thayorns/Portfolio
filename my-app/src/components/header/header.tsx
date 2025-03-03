@@ -6,9 +6,9 @@ import React from 'react'
 
 import './header.css'
 const TypingEffect = () => {
-    const text = 'Я начинающий фронтенд-разработчик.'
+    const text = 'Я фронтенд-разработчик.'
     const [currentText, setCurrentText] = useState('')
-    const [index, setIndex] = useState(0);
+   const [index, setIndex] = useState(0);
 
     useEffect(() => {
         if (index < text.length) {

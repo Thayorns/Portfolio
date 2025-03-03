@@ -6,6 +6,9 @@
     justify-content: space-around;
     align-items: center;
 }
+.info-section h3{
+    margin-top: 150px;
+}
 .info-icons{
     margin: 15px auto;
     width: 100%;

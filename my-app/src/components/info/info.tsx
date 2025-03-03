@@ -25,11 +25,21 @@ const imageLinks = [
     require('../../images/js-laptop-icon.png')
 ]
 const lItem = [
-    'Постоянно учусь новому.',
-    'Стремлюсь к мастерству и красоте кода.',
-    'Обожаю свое ремесло, радуюсь каждой решенной задаче.',
-    'Неустанно стремлюсь к знаниям.',
-    'Развиваю навыки фулстек-разработки.'
+    'Помощь людям в автоматизации процессов.',
+    'Мастерство и чистота кода.',
+    'Самореализация.',
+    'Профессиональный рост.',
+    'Работа в команде.'
+]
+const techList = [
+    'React',
+    'Redux + RTK Query',
+    'Router Dom 6',
+    'Node.js + Express',
+    'PostgreSQL',
+    'Websocket',
+    'Nginx',
+    'FSD методология',
 ]
 const Info = () => {
     return (
@@ -50,8 +60,26 @@ const Info = () => {
                 
             </div>
             <div className='info-text'>
-                
+                <h3>К чему стремлюсь в работе?</h3>
                 {lItem.map(li => 
+                    (
+                        <motion.div className="info-text-list-item-container"
+                        key={li}
+                        whileHover={{ scale: 1.1 }}
+                        initial="offscreen"
+                        whileInView="onscreen"
+                        viewport={{ once: true, amount: 0.4 }}
+                        >
+                            <motion.li variants={liVariants} 
+                                className='info-text-list-item'>
+                                <img className='done-icon' src={require('../../images/done-icon.png')} alt=''/>
+                                {li} 
+                            </motion.li>
+                        </motion.div>
+                    )
+                )}
+                <h3>Какие технологии использую?</h3>
+                {techList.map(li => 
                     (
                         <motion.div className="info-text-list-item-container"
                             key={li}
@@ -68,7 +96,6 @@ const Info = () => {
                         </motion.div>
                     )
                 )}
-                
             </div>
         </section>
     )

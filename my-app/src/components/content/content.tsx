@@ -33,6 +33,7 @@ const Content = () => {
     return (
         <section  id='projects' className='content-section'>
             <motion.div className='projects'>
+            <h3>Что реализовал?</h3>
                 {
                     projects.map((project: PetProjects,index: number) => {
                         return (
