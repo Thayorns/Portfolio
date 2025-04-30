@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# 👋 Привет, я Валентин — начинающий разработчик
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Telegram](https://img.shields.io/badge/-Telegram-0088cc?style=flat&logo=Telegram&logoColor=white)](https://t.me/@thayorn)
+[![Email](https://img.shields.io/badge/-Email-%23333?style=flat&logo=gmail)](mailto:thayornswordsman@gmail.com)
+[![GitHub](https://img.shields.io/github/followers/ваш_ник?label=Follow%20on%20GitHub&style=social)](https://github.com/Thayorns)
 
-## Available Scripts
+🔭 Сейчас активно изучаю:  
+- Веб-разработку
+- Фулстек-разработку
+- Алгоритмы и структуры данных
 
-In the project directory, you can run:
+## 🛠 Мой стек технологий
 
-### `npm start`
+### Frontend
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
+![Redux](https://img.shields.io/badge/-Redux-764ABC?style=flat&logo=redux&logoColor=white)
+![RTK Query](https://img.shields.io/badge/-RTK_Query-764ABC?style=flat&logo=redux&logoColor=white)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend & APIs
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![JWT](https://img.shields.io/badge/-JWT-000000?style=flat&logo=json-web-tokens&logoColor=white)
+![WebSocket](https://img.shields.io/badge/-WebSocket-010101?style=flat&logo=websocket&logoColor=white)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Databases
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 
-### `npm test`
+### DevOps & Security
+![Nginx](https://img.shields.io/badge/-Nginx-009639?style=flat&logo=nginx&logoColor=white)
+![Let's Encrypt](https://img.shields.io/badge/-Let's_Encrypt-003A70?style=flat&logo=lets-encrypt&logoColor=white)
+![Certbot](https://img.shields.io/badge/-Certbot-003A70?style=flat&logo=lets-encrypt&logoColor=white)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tools
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
+![Webpack](https://img.shields.io/badge/-Webpack-8DD6F9?style=flat&logo=webpack&logoColor=black)
 
-### `npm run build`
+## 📚 Обучение
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Платформы
+[![FreeCodeCamp](https://img.shields.io/badge/-FreeCodeCamp-0A0A23?style=flat&logo=freecodecamp&logoColor=white)](https://www.freecodecamp.org/)
+[![MDN Web Docs](https://img.shields.io/badge/-MDN_Web_Docs-000000?style=flat&logo=mdn-web-docs&logoColor=white)](https://developer.mozilla.org/)
+[![Udemy](https://img.shields.io/badge/-Udemy-A435F0?style=flat&logo=udemy&logoColor=white)](https://www.udemy.com/)
+[![Stepik](https://img.shields.io/badge/-Stepik-01AF00?style=flat&logo=stepik&logoColor=white)](https://stepik.org/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Пройденные курсы
+- **JavaScript Algorithms and Data Structures** - freeCodeCamp
+- **The Complete Web Developer Course** - Udemy
+- **Основы PostgreSQL** - Stepik
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📈 Моя статистика на GitHub
 
-### `npm run eject`
+[![Ваша статистика](https://github-readme-stats.vercel.app/api?username=ваш_ник&show_icons=true&theme=default)](https://github.com/Thayorns)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📫 Как со мной связаться
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Хотите предложить проект, работу, стажировку или дать совет по обучению? Буду рад!  
+📧 **Email:** thayornswordsman@gmail.com 
+📱 **Telegram:** [@thayorn](https://t.me/@thayorn)  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⭐ Не стесняйтесь ставить звёзды моим репозиториям, если они вам нравятся!

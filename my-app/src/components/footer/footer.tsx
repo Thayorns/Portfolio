@@ -29,16 +29,6 @@ const items = [
         </a>,
     },
     {
-      key: '5',
-      children: 
-        <a href='https://hh.ru/resume/acb11d21ff05b3f52e0039ed1f677658354a48'
-          target='_blank'
-          rel="noopener noreferrer">
-          <img className='gitHub-icon' alt=''
-            src={require('../../images/HeadHunter_logo.png')}/>
-        </a>,
-    },
-    {
       key: '6',
       children: 
         <a href='https://web.telegram.org/k/#@thayorn'
