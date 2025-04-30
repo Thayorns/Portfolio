@@ -9,9 +9,9 @@
 - Фулстек-разработку
 - Алгоритмы и структуры данных
 
-## 🛠 Мой стек технологий
+## 🛠️ Мой стек технологий
 
-### Frontend
+### ⚛️ Frontend
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
@@ -33,12 +33,12 @@
 ![Let's Encrypt](https://img.shields.io/badge/-Let's_Encrypt-003A70?style=flat&logo=lets-encrypt&logoColor=white)
 ![Certbot](https://img.shields.io/badge/-Certbot-003A70?style=flat&logo=lets-encrypt&logoColor=white)
 
-### UI Libraries
+### 🎨 UI Libraries
 ![Ant Design](https://img.shields.io/badge/-Ant_Design-0170FE?style=flat&logo=ant-design&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/-Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white)
 
-### Architecture
+### 🏗️ Architecture
 ![FSD Methodology](https://img.shields.io/badge/-FSD_Methodology-2496ED?style=flat&logo=arc&logoColor=white) 🏗️
 
 ### Tools
