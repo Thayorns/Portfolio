@@ -2,7 +2,7 @@
 
 [![Telegram](https://img.shields.io/badge/-Telegram-0088cc?style=flat&logo=Telegram&logoColor=white)](https://t.me/@thayorn)
 [![Email](https://img.shields.io/badge/-Email-%23333?style=flat&logo=gmail)](mailto:thayornswordsman@gmail.com)
-[![GitHub](https://img.shields.io/github/followers/ваш_ник?label=Follow%20on%20GitHub&style=social)](https://github.com/Thayorns)
+[![GitHub](https://img.shields.io/github/followers/Thayorns?label=Follow%20on%20GitHub&style=social)](https://github.com/Thayorns)
 
 🔭 Сейчас активно изучаю:  
 - Веб-разработку
@@ -52,7 +52,7 @@
 
 ## 📈 Моя статистика на GitHub
 
-[![Thayorns](https://github-readme-stats.vercel.app/api?username=ваш_ник&show_icons=true&theme=default)](https://github.com/Thayorns)
+[![Thayorns](https://github-readme-stats.vercel.app/api?username=Thayorns&show_icons=true&theme=default)](https://github.com/Thayorns)
 
 ## 📫 Как со мной связаться
 
