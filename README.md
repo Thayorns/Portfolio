@@ -33,6 +33,14 @@
 ![Let's Encrypt](https://img.shields.io/badge/-Let's_Encrypt-003A70?style=flat&logo=lets-encrypt&logoColor=white)
 ![Certbot](https://img.shields.io/badge/-Certbot-003A70?style=flat&logo=lets-encrypt&logoColor=white)
 
+### UI Libraries
+![Ant Design](https://img.shields.io/badge/-Ant_Design-0170FE?style=flat&logo=ant-design&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/-Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white)
+
+### Architecture
+![FSD Methodology](https://img.shields.io/badge/-FSD_Methodology-2496ED?style=flat&logo=arc&logoColor=white) 🏗️
+
 ### Tools
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
 ![Webpack](https://img.shields.io/badge/-Webpack-8DD6F9?style=flat&logo=webpack&logoColor=black)
