@@ -52,7 +52,7 @@
 
 ## 📈 Моя статистика на GitHub
 
-[![Ваша статистика](https://github-readme-stats.vercel.app/api?username=ваш_ник&show_icons=true&theme=default)](https://github.com/Thayorns)
+[![Thayorns](https://github-readme-stats.vercel.app/api?username=ваш_ник&show_icons=true&theme=default)](https://github.com/Thayorns)
 
 ## 📫 Как со мной связаться
 
