@@ -78,7 +78,7 @@ const Info = () => {
                         </motion.div>
                     )
                 )}
-                <h3>Какие технологии использую?</h3>
+                <h3 id="stack">Какие технологии использую?</h3>
                 {techList.map(li => 
                     (
                         <motion.div className="info-text-list-item-container"

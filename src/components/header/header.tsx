@@ -47,13 +47,13 @@ const Header = ({toggleOpen, isOpen}: ToggleParams) => {
             }} src={require('../../images/avatar.jpg')}  alt="avatar"
         />
     const breadcrumbLinks = [
+        {title: <AnchorLink offset={() => 100} href="#stack">Стек</AnchorLink>},
         {title: <AnchorLink offset={() => 100} href="#projects">Проекты</AnchorLink>},
         {title: <AnchorLink offset={() => 100} href="#contacts">Контакты</AnchorLink>},
-        // {title: <AnchorLink offset={() => 100} href="#about">About Me</AnchorLink>},
     ]
     // Burger-menu items:
     const items = [
-        // {label: <AnchorLink href="#about">About Me</AnchorLink>, key: '0',},
+        {label: <AnchorLink href="#stack">Стек</AnchorLink>, key: '0',},
         {label: <AnchorLink href="#projects">Проекты</AnchorLink>, key: '1',},
         {label: <AnchorLink href="#contacts">Контакты</AnchorLink>, key: '2',}
     ]

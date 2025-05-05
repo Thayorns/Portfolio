@@ -38,6 +38,7 @@
 }
 .burger-content{
     padding-top: 120px;
+    padding-bottom: 40px;
     position: fixed;
     width: 100%;
     height: 150px;
@@ -66,8 +67,8 @@
 .ant-breadcrumb a:hover{
     background: white;
     color: black;
-    scale: 1.2;
-    transition: .4s;
+    /* scale: 1.2; */
+    /* transition: .4s; */
 }
 .progress-bar {
     max-width: 1208px;
