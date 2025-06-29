@@ -22,7 +22,7 @@ interface PetProjects {
 const projects = [
     
     {src: require('../../images/twitch-css-modifier.png'), title: 'Twitch No Overlay Extension', description: 'Браузерное расширение, которое отключает затемнение и другие UI элементы из стримов Twitch.', link: 'https://github.com/Thayorns/twitch-css-modifier'},
-    {src: require('../../images/creamkorzh.png'), title: 'КРЕМ и КОРЖ', description: 'Приложение для пекарни-кондитерской. Учёт подарочных кофе по qr-коду, регистрация/авторизация по почте, уведомления и корзина для заказов тортов.', link: 'https://creamkorzh.ru/'},
+    {src: require('../../images/creamkorzh.png'), title: 'Pastry Shop', description: 'Open source проект для автоматизации бизнес-процессов пекарни-кондитерской.', link: 'https://github.com/Thayorns/pastry-shop'},
     {src: require('../../images/games-query.jpg'), title: 'Игровая библиотека', description: 'React приложение получает данные по внешнему API, рендерит в таблицу с возможностью фильтра по категориям. ограничение - 50 игр.',link: 'https://games-query.netlify.app/'},
     {src: require('../../images/rtk-query.png'), title: 'Запросы к API', description: 'React приложение получает данные из jsonplaceholder с подгрузкой следующей партии данных по клику. Реализован роутинг с router dom 6.',link: 'https://rtkquery-fsd-rrd6.netlify.app/'},
     {src: require('../../images/smallLogo.png'), title: 'Black Bears brewery', description: 'Визитная карточка пивоварни "Black Bears Brewery". Много пива не бывает..',link: 'https://black-bears-brewery.netlify.app/'},
