@@ -6,6 +6,8 @@
 
 Сейчас активно участвую в open source проектах и погружаюсь в алгоритмы и структуры данных js.
 
+[![Thayorns](https://github-readme-stats.vercel.app/api?username=Thayorns&show_icons=true&theme=dark)](https://github.com/Thayorns)
+
 ### Cтек технологий
 
 #### Frontend
