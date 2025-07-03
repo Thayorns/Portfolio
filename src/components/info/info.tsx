@@ -25,11 +25,11 @@ const imageLinks = [
     require('../../images/js-laptop-icon.png')
 ]
 const lItem = [
-    'Помощь людям в автоматизации процессов.',
-    'Мастерство и чистота кода.',
-    'Самореализация.',
-    'Профессиональный рост.',
-    'Работа в команде.'
+    "Helping people automate processes.",
+    "Mastery and clean code.",
+    "Self-realization.",
+    "Professional growth.",
+    "Teamwork.",
 ]
 const techList = [
     'React',
@@ -39,7 +39,11 @@ const techList = [
     'PostgreSQL',
     'Websocket',
     'Nginx',
-    'FSD методология',
+    'Docker',
+    'Typescript',
+    'Ant Design',
+    'Tailwind',
+    'Framer Motion',
 ]
 const Info = () => {
     return (
@@ -60,7 +64,7 @@ const Info = () => {
                 
             </div>
             <div className='info-text'>
-                <h3>К чему стремлюсь в работе?</h3>
+                <h3>What are the goals?</h3>
                 {lItem.map(li => 
                     (
                         <motion.div className="info-text-list-item-container"
@@ -78,7 +82,7 @@ const Info = () => {
                         </motion.div>
                     )
                 )}
-                <h3 id="stack">Какие технологии использую?</h3>
+                <h3 id="stack">My tech stack</h3>
                 {techList.map(li => 
                     (
                         <motion.div className="info-text-list-item-container"

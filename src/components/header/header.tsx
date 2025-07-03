@@ -6,7 +6,7 @@ import React from 'react'
 
 import './header.css'
 const TypingEffect = () => {
-    const text = 'Я фронтенд-разработчик.'
+    const text = 'a js developer and open source contributor.'
     const [currentText, setCurrentText] = useState('')
    const [index, setIndex] = useState(0);
 
@@ -47,15 +47,15 @@ const Header = ({toggleOpen, isOpen}: ToggleParams) => {
             }} src={require('../../images/avatar.jpg')}  alt="avatar"
         />
     const breadcrumbLinks = [
-        {title: <AnchorLink offset={() => 100} href="#stack">Стек</AnchorLink>},
-        {title: <AnchorLink offset={() => 100} href="#projects">Проекты</AnchorLink>},
-        {title: <AnchorLink offset={() => 100} href="#contacts">Контакты</AnchorLink>},
+        {title: <AnchorLink offset={() => 100} href="#stack">Stack</AnchorLink>},
+        {title: <AnchorLink offset={() => 100} href="#projects">Projects</AnchorLink>},
+        {title: <AnchorLink offset={() => 100} href="#contacts">Contacts</AnchorLink>},
     ]
     // Burger-menu items:
     const items = [
-        {label: <AnchorLink href="#stack">Стек</AnchorLink>, key: '0',},
-        {label: <AnchorLink href="#projects">Проекты</AnchorLink>, key: '1',},
-        {label: <AnchorLink href="#contacts">Контакты</AnchorLink>, key: '2',}
+        {label: <AnchorLink href="#stack">Stack</AnchorLink>, key: '0',},
+        {label: <AnchorLink href="#projects">Projects</AnchorLink>, key: '1',},
+        {label: <AnchorLink href="#contacts">Contacts</AnchorLink>, key: '2',}
     ]
 
     
@@ -109,14 +109,11 @@ const Header = ({toggleOpen, isOpen}: ToggleParams) => {
                                 exit={{ opacity: 0, x: -100 }}
                                 className="menu-item"
                                 onClick={() => {
-                                        // handlePageChoose(item.key)
                                         toggleOpen()
                                     }
                                 }
                             >
-                            <motion.div 
-                                // className={activePage === item.key ? 'title active' : 'title'}
-                            >
+                            <motion.div >
                                 {item.label}
                             </motion.div>
                             
@@ -127,13 +124,10 @@ const Header = ({toggleOpen, isOpen}: ToggleParams) => {
             </AnimatePresence>
             
             <div className='about-me'>
-                <h1>Привет, меня зовут Валентин!</h1>
+                <h1>Hi! I'm Valentine</h1>
                 <hr style={{borderColor: "#828585", width: '250px'}}></hr>
 
-                    <TypingEffect/>
-                {/* <span>and this is the case when 'coding' === 'my passion' 
-                    <span className='true-span'>\\true</span>
-                </span> */}
+                <TypingEffect/>
             </div>   
         </section>
     )

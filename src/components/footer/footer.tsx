@@ -6,18 +6,18 @@ import './footer.css'
 const items = [
     {
       key: '1',
-      label: 'владелец',
-      children: 'Фролов Валентин',
+      label: 'owner',
+      children: 'Valentine Frolov',
     },
     {
       key: '2',
-      label: 'телефон',
+      label: 'phone',
       children: '8(921)3252250',
     },
     {
       key: '3',
-      label: 'место жительства',
-      children: 'Санкт-Петербург, Россия',
+      label: 'live',
+      children: 'Saint Petersburg, Russia',
     },
     {
       key: '4',
@@ -43,7 +43,7 @@ const items = [
 const Footer = () => {
     return (
         <section className='footer-section' id='contacts'>
-          <h2>Контакты:</h2>
+          <h2>Contacts:</h2>
           <Descriptions layout="vertical" items={items} />
           <FloatButton.BackTop/>
         </section>
