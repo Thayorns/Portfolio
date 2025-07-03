@@ -25,16 +25,16 @@ const imageLinks = [
     require('../../images/js-laptop-icon.png')
 ]
 const lItem = [
-    "Helping people automate processes.",
-    "Mastery and clean code.",
-    "Self-realization.",
-    "Professional growth.",
-    "Teamwork.",
+    "Helping people automate processes",
+    "Mastery and clean code",
+    "Self-realization",
+    "Professional growth",
+    "Teamwork",
 ]
 const techList = [
-    'React',
+    'React + Router Dom 6',
+    'Next.js',
     'Redux + RTK Query',
-    'Router Dom 6',
     'Node.js + Express',
     'PostgreSQL',
     'Websocket',
