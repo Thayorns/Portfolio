@@ -1,14 +1,16 @@
-## Привет, я Валентин — js разработчик и open source contributor
+## Hi, I'm Valentine - a js developer and open source contributor
 
 [![Telegram](https://img.shields.io/badge/-Telegram-0088cc?style=flat&logo=Telegram&logoColor=white)](https://t.me/@thayorn)
 [![Email](https://img.shields.io/badge/-Email-%23333?style=flat&logo=gmail)](mailto:thayornswordsman@gmail.com)
 [![GitHub](https://img.shields.io/github/followers/Thayorns?label=Follow%20on%20GitHub&style=social)](https://github.com/Thayorns)
 
-Сейчас активно участвую в open source проектах и погружаюсь в алгоритмы и структуры данных js.
+Now I am actively participating in open source projects and diving into Next.js
+
+[Portfolio](https://portfolio-valentine.netlify.app/)
 
 [![Thayorns](https://github-readme-stats.vercel.app/api?username=Thayorns&show_icons=true&theme=dark)](https://github.com/Thayorns)
 
-### Cтек технологий
+### Stack
 
 #### Frontend
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
@@ -41,22 +43,22 @@
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
 ![Webpack](https://img.shields.io/badge/-Webpack-8DD6F9?style=flat&logo=webpack&logoColor=black)
 
-### Обучение
+### Education
 
-#### Платформы
+#### Platforms
 [![FreeCodeCamp](https://img.shields.io/badge/-FreeCodeCamp-0A0A23?style=flat&logo=freecodecamp&logoColor=white)](https://www.freecodecamp.org/)
 [![MDN Web Docs](https://img.shields.io/badge/-MDN_Web_Docs-000000?style=flat&logo=mdn-web-docs&logoColor=white)](https://developer.mozilla.org/)
 [![Udemy](https://img.shields.io/badge/-Udemy-A435F0?style=flat&logo=udemy&logoColor=white)](https://www.udemy.com/)
 [![Stepik](https://img.shields.io/badge/-Stepik-01AF00?style=flat&logo=stepik&logoColor=white)](https://stepik.org/)
 
-#### Пройденные курсы
+#### Completed courses
 - **JavaScript Algorithms and Data Structures** - freeCodeCamp
 - **The Complete Web Developer Course** - Udemy
-- **Основы PostgreSQL** - Stepik
+- **PostgreSQL Basics** - Stepik
 
-### Контакты
+### Contacts
 
-Хотите предложить open source проект, работу, стажировку - пишите! 
+Want to offer an open source project to contribute to, job, internship - write!
 
 **Email:** thayornswordsman@gmail.com
 
